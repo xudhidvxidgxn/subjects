@@ -67,7 +67,7 @@
             width: 430px;
             border: 1px solid #e2e2e2;
             border-radius: 10px;
-            padding: 12px 20px;
+            padding: 12px;
         }
         .book {
             width: 35px;
@@ -88,15 +88,23 @@
             display: flex;
             align-items: center;
         }
+        .svg-inputed img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .searchbar.svg-inputed img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
         .category {
             display: flex;
             align-items: center;
             padding: 10px 15px;
             border-radius: 10px;
             transition: background-color 0.3s ease;
-        }
-        .category:nth-child(1) {
-            background-color: #e8f0f0;
+            font-weight: 500;
         }
         .bookmark-display-area {
             display: flex;
@@ -323,9 +331,9 @@
         </div>
         <div class="bookmark-categorize">
             <input type="radio" name="category" id="Home" checked hidden>
-            <label for="Home" class="category">Home</label>
+            <label for="Home" class="category svg-inputed"><img src="../images/home.png" alt="home">Home</label>
             <input type="radio" name="category" id="Archived" hidden>
-            <label for="Archived" class="category">Archived</label>
+            <label for="Archived" class="category svg-inputed"><img src="../images/Archived.png" alt="Archived">Archived</label>
         </div>
         <p class="subtitle">TAGS</p>
         <label><div class="TAG"><input type="checkbox">AI<div class="number-circle">1</div></div></label>
@@ -354,7 +362,8 @@
                 <div class="menu">
                     ☰
                 </div>
-                <div class="searchbar">
+                <div class="searchbar svg-inputed">
+                    <img src="../images/dodbogi.png" alt="돋보기">
                     Search by title...
                 </div>
             </div>
