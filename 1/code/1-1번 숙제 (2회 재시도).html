@@ -74,6 +74,11 @@
             height: 35px;
             background-color: #024849;
             border-radius: 10px;
+            padding: 7px;
+        }
+        .book img {
+            width: 100%;
+            height: 100%;
         }
         .logo {
             font-size: 24px;
@@ -151,7 +156,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
-            grid-auto-rows: 310px;
+            grid-auto-rows: 360px;
             padding: 0 30px;
             width: 100%;
             height: 100%;
@@ -186,7 +191,7 @@
             border-radius: 50%;
             background-color: #c4c4c4;
         }
-        .profile image {
+        .profile img {
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -251,6 +256,7 @@
             width: 100%;
             justify-content: space-between;
             align-items: center;
+            padding-top: 5px;
         }
         .bookmark-info {
             display: flex;
@@ -310,7 +316,7 @@
     <section id="bookmark-sidebar">
         <!-- 사이드바 내용 작성 -->
         <div style="display: flex; gap: 10px; margin-bottom: 40px; align-items: center;">
-            <div class="book"></div>
+            <div class="book"><img src="../images/bookmark-.png" alt="bookmark"></div>
             <div class="logo">
                 Bookmark Manager
             </div>
@@ -355,7 +361,7 @@
             <div class="profile-And-Button">
                 <!-- 프로필 및 버튼 내용 작성 -->
                 <div class="addButton">+ Add Bookmark</div>
-                <div class="profile"></div>
+                <div class="profile"><img src="../images/ow.gif" alt="ow"></div>
             </div>
         </div>
         <div class="bookmark-display-area">
@@ -513,8 +519,8 @@
                             <div style="display: flex; gap: 15px;">
                                 <div class="bookmark-image"></div>
                                 <div>
-                                    <p class="bookmark-title">Claude</p>
-                                    <p class="bookmark-subtitle">claude.ai</p>
+                                    <p class="bookmark-title">Web.dev</p>
+                                    <p class="bookmark-subtitle">web.dev</p>
                                 </div>
                             </div>
                             <div class="option">...</div>
@@ -523,20 +529,20 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
+                            Guidance to build modern web experiences that work on any browser. Learn about web vitals, PWAs, and more.
                         </p>
                     </div>
                     <div class="bookmark-tags">
-                        <div class="bookmark-tag">Tools</div>
-                        <div class="bookmark-tag">AI</div>
+                        <div class="bookmark-tag">Performance</div>
                         <div class="bookmark-tag">Learning</div>
+                        <div class="bookmark-tag">Tips</div>
                     </div>
                     <hr style="transform: scale(1.2, 1);">
                     <div class="bookmark-footer">
                         <div class="bookmark-info">
-                            <div class="svg-inputed">73</div>
-                            <div class="svg-inputed">23 Sep</div>
-                            <div class="svg-inputed">18 Feb</div>
+                            <div class="svg-inputed">15</div>
+                            <div class="svg-inputed">16 Aug</div>   
+                            <div class="svg-inputed">15 Feb</div>
                         </div>
                         <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
                     </div>
@@ -548,8 +554,8 @@
                             <div style="display: flex; gap: 15px;">
                                 <div class="bookmark-image"></div>
                                 <div>
-                                    <p class="bookmark-title">Claude</p>
-                                    <p class="bookmark-subtitle">claude.ai</p>
+                                    <p class="bookmark-title">Tailwind CSS</p>
+                                    <p class="bookmark-subtitle">tailwindcss.com</p>
                                 </div>
                             </div>
                             <div class="option">...</div>
@@ -558,20 +564,20 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
+                            A utility-first CSS framework for rapidly building modern websites without ever leaving your HTML
                         </p>
                     </div>
                     <div class="bookmark-tags">
+                        <div class="bookmark-tag">CSS</div>
+                        <div class="bookmark-tag">Frmaework</div>
                         <div class="bookmark-tag">Tools</div>
-                        <div class="bookmark-tag">AI</div>
-                        <div class="bookmark-tag">Learning</div>
                     </div>
                     <hr style="transform: scale(1.2, 1);">
                     <div class="bookmark-footer">
                         <div class="bookmark-info">
-                            <div class="svg-inputed">73</div>
-                            <div class="svg-inputed">23 Sep</div>
-                            <div class="svg-inputed">18 Feb</div>
+                            <div class="svg-inputed">52</div>
+                            <div class="svg-inputed">19 Sep</div>
+                            <div class="svg-inputed">12 Feb</div>
                         </div>
                         <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
                     </div>
@@ -583,8 +589,8 @@
                             <div style="display: flex; gap: 15px;">
                                 <div class="bookmark-image"></div>
                                 <div>
-                                    <p class="bookmark-title">Claude</p>
-                                    <p class="bookmark-subtitle">claude.ai</p>
+                                    <p class="bookmark-title">Dev.to</p>
+                                    <p class="bookmark-subtitle"></p>
                                 </div>
                             </div>
                             <div class="option">...</div>
@@ -593,20 +599,20 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
+
                         </p>
                     </div>
                     <div class="bookmark-tags">
-                        <div class="bookmark-tag">Tools</div>
-                        <div class="bookmark-tag">AI</div>
-                        <div class="bookmark-tag">Learning</div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
                     </div>
                     <hr style="transform: scale(1.2, 1);">
                     <div class="bookmark-footer">
                         <div class="bookmark-info">
-                            <div class="svg-inputed">73</div>
-                            <div class="svg-inputed">23 Sep</div>
-                            <div class="svg-inputed">18 Feb</div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
                         </div>
                         <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
                     </div>
@@ -618,8 +624,8 @@
                             <div style="display: flex; gap: 15px;">
                                 <div class="bookmark-image"></div>
                                 <div>
-                                    <p class="bookmark-title">Claude</p>
-                                    <p class="bookmark-subtitle">claude.ai</p>
+                                    <p class="bookmark-title">JavaScript.info</p>
+                                    <p class="bookmark-subtitle"></p>
                                 </div>
                             </div>
                             <div class="option">...</div>
@@ -628,20 +634,20 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
+
                         </p>
                     </div>
                     <div class="bookmark-tags">
-                        <div class="bookmark-tag">Tools</div>
-                        <div class="bookmark-tag">AI</div>
-                        <div class="bookmark-tag">Learning</div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
                     </div>
                     <hr style="transform: scale(1.2, 1);">
                     <div class="bookmark-footer">
                         <div class="bookmark-info">
-                            <div class="svg-inputed">73</div>
-                            <div class="svg-inputed">23 Sep</div>
-                            <div class="svg-inputed">18 Feb</div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
                         </div>
                         <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
                     </div>
@@ -653,8 +659,8 @@
                             <div style="display: flex; gap: 15px;">
                                 <div class="bookmark-image"></div>
                                 <div>
-                                    <p class="bookmark-title">Claude</p>
-                                    <p class="bookmark-subtitle">claude.ai</p>
+                                    <p class="bookmark-title">freeCodeCamp</p>
+                                    <p class="bookmark-subtitle"></p>
                                 </div>
                             </div>
                             <div class="option">...</div>
@@ -663,55 +669,20 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
+
                         </p>
                     </div>
                     <div class="bookmark-tags">
-                        <div class="bookmark-tag">Tools</div>
-                        <div class="bookmark-tag">AI</div>
-                        <div class="bookmark-tag">Learning</div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
                     </div>
                     <hr style="transform: scale(1.2, 1);">
                     <div class="bookmark-footer">
                         <div class="bookmark-info">
-                            <div class="svg-inputed">73</div>
-                            <div class="svg-inputed">23 Sep</div>
-                            <div class="svg-inputed">18 Feb</div>
-                        </div>
-                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
-                    </div>
-                </div>
-                <div class="bookmark">
-                    <!-- 개별 북마크 내용 작성 -->
-                    <div class="bookmark-header">
-                        <div class="bookmark-title-area">
-                            <div style="display: flex; gap: 15px;">
-                                <div class="bookmark-image"></div>
-                                <div>
-                                    <p class="bookmark-title">Claude</p>
-                                    <p class="bookmark-subtitle">claude.ai</p>
-                                </div>
-                            </div>
-                            <div class="option">...</div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="bookmark-main">
-                        <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
-                        </p>
-                    </div>
-                    <div class="bookmark-tags">
-                        <div class="bookmark-tag">Tools</div>
-                        <div class="bookmark-tag">AI</div>
-                        <div class="bookmark-tag">Learning</div>
-                    </div>
-                    <hr style="transform: scale(1.2, 1);">
-                    <div class="bookmark-footer">
-                        <div class="bookmark-info">
-                            <div class="svg-inputed">73</div>
-                            <div class="svg-inputed">23 Sep</div>
-                            <div class="svg-inputed">18 Feb</div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
                         </div>
                         <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
                     </div>
