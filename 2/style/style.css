@@ -35,7 +35,7 @@ body {
 .dessert {
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 .image-area {
     display: flex;
@@ -58,6 +58,7 @@ body {
     left: 50%;
     bottom: -20px;
     transform: translateX(-50%);
-    border-radius: 50px;
     border: 1px solid #B0ABA8;
+    border-radius: 50px;
+    background-color: #FFFEFF;
 }
