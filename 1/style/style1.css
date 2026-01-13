@@ -272,6 +272,12 @@ input[type="radio"]:checked + label {
 .menu {
     display: none;
 }
+a {
+    display: inherit;
+    gap: inherit;
+    text-decoration: none;
+    color: inherit;
+}
 @media screen and (max-width: 1660px) {
     .menu {
         display: flex;
