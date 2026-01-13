@@ -15,6 +15,7 @@
         }
         .modal {
             display: none;
+            position: relative;
         }
         input#modal:checked + .modal {
             display: flex;
@@ -41,15 +42,23 @@
             width: 1280px;
             height: 720px;
             background-color: #fff;
-            animation: pop 0.3s ease;
+            animation: pop 0.5s ease;
+            padding: 40px;
         }
         label[for="modal"] {
-            padding: 10px 20px;
+            padding: 10px 40px;
             border: 1px solid black;
             border-radius: 10px;
-            animation: myAnimation calc(1s/1) ease;
+            animation: myAnimation calc(1s/0.5);
             animation-iteration-count: infinite;
-            transition: transform ease-in-out;
+        }
+        .modal label[for="modal"] {
+            padding: 10px 40px;
+            border: 1px solid black;
+            border-radius: 10px;
+            animation: myAnimation1 calc(1s/0.5);
+            animation-iteration-count: infinite;
+            transition: margin 0.2s ease;
         }
         /* @keyframes pop {
             0% { transform: translateY(5%); opacity: 0; }
@@ -61,11 +70,18 @@
             100% { transform: scale(1); opacity: 1;}
         }
         @keyframes myAnimation {
-            0% {transform: translate(-100px, 100px)}
-            25% {transform: translate(100px, 100px)}
-            50% {transform: translate(100px, -100px)}
-            75% {transform: translate(-100px, -100px)}
-            100% {transform: translate(-100px, 100px)}
+            0% {transform: translate(-75px, 75px)}
+            25% {transform: translate(75px, 75px)}
+            50% {transform: translate(75px, -75px)}
+            75% {transform: translate(-75px, -75px)}
+            100% {transform: translate(-75px, 75px)}
+        }
+        @keyframes myAnimation1 {
+            0% {transform: translate(-175%, 550%)}
+            25% {transform: translate(175%, 550%)}
+            50% {transform: translate(175%, -550%)}
+            75% {transform: translate(-175%, -550%)}
+            100% {transform: translate(-175%, 550%)}
         }
     </style>
 </head>
