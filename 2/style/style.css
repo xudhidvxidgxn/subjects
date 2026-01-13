@@ -37,6 +37,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    padding-bottom: 20px;
 }
 .image-area {
     display: flex;
@@ -73,6 +74,20 @@ body {
     margin-top: 45px;
 }
 .main-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    padding: 5px 0;
+}
+
+
+
+@media screen and (max-width: 1800px) {
+    .desserts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 1240px) {
+    .desserts {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
