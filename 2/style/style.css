@@ -115,6 +115,11 @@ body {
     padding: 20px 2.5em;
     background-color: #fff;
 }
+.modal-panel > img {
+    width: 50px;
+    height: 50px;
+    margin: 20px 5px;
+}
 .modal-panel-title {
     font-size: 2.3em;
     font-weight: 900;
@@ -139,6 +144,7 @@ body {
 }
 .info-front {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 .info p.menu-title {
@@ -165,6 +171,12 @@ body {
     background-color: #c83b0e;
     padding: 15px 0;
     color: #fff;
+}
+.info-front > img {
+    width: 50px;
+    height: 50px;
+    /*background-color: #c83b0e;*/
+    border: 1px solid rgb(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1800px) {
