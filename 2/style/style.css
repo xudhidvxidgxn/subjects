@@ -54,8 +54,12 @@ body {
     border-radius: 15px;
 }
 .add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    padding: 15px 30px;
+    padding: 12px 30px;
+    min-width: 180px;
     z-index: 10;
     left: 50%;
     bottom: 0;
@@ -64,4 +68,11 @@ body {
     background-color: #FFFEFF;
     transform: translate(-50%, 50%);
     cursor: pointer;
+}
+.dessert-text-area {
+    margin-top: 45px;
+}
+.main-text {
+    font-size: 20px;
+    font-weight: bold;
 }
