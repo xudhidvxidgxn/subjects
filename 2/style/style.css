@@ -145,10 +145,14 @@ body {
 .info-front {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 14px;
+}
+.info-front p, .info-front span {
+    font-size: 0.8em;
 }
 .info p.menu-title {
-    margin-bottom: 8px;
+    font-weight: 900;
+    margin-bottom: 5px;
 }
 .info span:nth-child(2) {
     margin-right: 15px;
