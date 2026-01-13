@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        p {padding: 0; margin: 0;}
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .modal {
+            display: none;
+        }
+        input#modal:checked + .modal {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .modal-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1280px;
+            height: 720px;
+            background-color: #fff;
+            animation: pop 0.3s ease;
+        }
+        label[for="modal"] {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            animation: myAnimation calc(1s/1) ease;
+            animation-iteration-count: infinite;
+            transition: transform ease-in-out;
+        }
+        /* @keyframes pop {
+            0% { transform: translateY(5%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        } */
+        @keyframes pop {
+            0% { transform: scale(0); opacity: 0;}
+            50% {transform: scale(1.05);}
+            100% { transform: scale(1); opacity: 1;}
+        }
+        @keyframes myAnimation {
+            0% {transform: translate(-100px, 100px)}
+            25% {transform: translate(100px, 100px)}
+            50% {transform: translate(100px, -100px)}
+            75% {transform: translate(-100px, -100px)}
+            100% {transform: translate(-100px, 100px)}
+        }
+    </style>
+</head>
+<body>
+    <label for="modal">여기를 눌러 시작하세요</label>
+    <input type="checkbox" id="modal" class="modal-button" hidden>
+    <div class="modal">
+        <div class="modal-area">
+            <label for="modal"><p>여기를 눌러 종료하세요</p></label>
+        </div>
+    </div>
+</body>
+</html>

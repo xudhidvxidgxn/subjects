@@ -16,12 +16,14 @@ body {
     align-items: center;
 }
 .display-window {
+    display: flex;
+    gap: 40px;
     width: 100vw;
     padding: 100px 120px;
 }
 .title {
     font-size: 35px;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 40px;
 }
 .dessert-menus {
@@ -78,7 +80,22 @@ body {
     font-weight: bold;
     padding: 5px 0;
 }
-
+.cart {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 400px;
+    min-width: 450px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    
+}
+.cart-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #B53F21;
+}
 
 
 @media screen and (max-width: 1800px) {
