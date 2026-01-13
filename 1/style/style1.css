@@ -102,6 +102,7 @@ hr {
     border-radius: 10px;
     transition: background-color 0.3s ease;
     font-weight: 500;
+    cursor: pointer;
 }
 .bookmark-display-area {
     display: flex;
@@ -156,6 +157,7 @@ p.subtitle {
     border: 1px solid #e2e2e2;
     border-radius: 10px;
     background-color: #fff;
+    cursor: pointer;
 }
 #bookmarks {
     display: grid;
