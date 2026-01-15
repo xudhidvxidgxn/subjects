@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modal-and-animation-test</title>
     <style>
+        label[for="modal"] > p:first-child {
+            display: none;
+        }
         * {
             box-sizing: border-box;
         }
@@ -56,9 +59,15 @@
             padding: 10px 40px;
             border: 1px solid black;
             border-radius: 10px;
-            animation: myAnimation1 calc(1s/0.5);
             animation-iteration-count: infinite;
+            animation: myAnimation1 calc(1s/0.5);
             transition: margin 0.2s ease;
+        }
+        label[for='modal']:hover > p:first-child {
+            display: inline;
+        }
+        label[for='modal']:hover > p:last-child {
+            display: none;
         }
         /* @keyframes pop {
             0% { transform: translateY(5%); opacity: 0; }
@@ -128,10 +137,13 @@
 </head>
 <body>
     <label for="modal">여기를 눌러 시작하세요</label>
-    <input type="checkbox" id="modal" class="modal-button" hidden>
+    <input type="checkbox" id="modal" class="modal-button" checked hidden>
     <div class="modal">
         <div class="modal-area">
-            <label for="modal"><p>여기를 눌러 종료하세요</p></label>
+            <label for="modal" style="display: flex; justify-content: center; align-items: center; width: 250px;">
+                <p>못잡겠쥐?</p>
+                <p>여기를 눌러 종료하세요</p>
+            </label>
         </div>
     </div>
 </body>
