@@ -89,21 +89,30 @@
                 aspect-ratio: 9/12;
             }
             @keyframes myAnimation1 {
-            0% {transform: translate(-20vw, 550%)}
-            25% {transform: translate(20vw, 550%)}
-            50% {transform: translate(20vw, -550%)}
-            75% {transform: translate(-20vw, -550%)}
-            100% {transform: translate(-20vw, 550%)}
+            0% {transform: translate(-20vw, 25vh)}
+            25% {transform: translate(20vw, 25vh)}
+            50% {transform: translate(20vw, -25vh)}
+            75% {transform: translate(-20vw, -25vh)}
+            100% {transform: translate(-20vw, 25vh)}
             }
         }
         @media screen and (max-width: 600px) {
             @keyframes myAnimation1 {
-            0% {transform: translate(-10vw, 550%)}
-            25% {transform: translate(10vw, 550%)}
-            50% {transform: translate(10vw, -550%)}
-            75% {transform: translate(-10vw, -550%)}
-            100% {transform: translate(-10vw, 550%)}
+            0% {transform: translate(-10vw, 25vh)}
+            25% {transform: translate(10vw, 25vh)}
+            50% {transform: translate(10vw, -25vh)}
+            75% {transform: translate(-10vw, -25vh)}
+            100% {transform: translate(-10vw, 25vh)}
+            }
         }
+        @media screen and (max-width: 500px) {
+            @keyframes myAnimation1 {
+            0% {transform: translate(-5vw, 25vh)}
+            25% {transform: translate(5vw, 25vh)}
+            50% {transform: translate(5vw, -25vh)}
+            75% {transform: translate(-5vw, -25vh)}
+            100% {transform: translate(-5vw, 25vh)}
+            }
         }
     </style>
 </head>
