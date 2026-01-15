@@ -8,7 +8,7 @@
         * {
             box-sizing: border-box;
         }
-        .modal-area > p:first-child, body > p:first-child {
+        .modal-area > p:first-of-type, body > p:first-of-type {
             display: none;
         }
         p {padding: 0; margin: 0;}
@@ -63,10 +63,10 @@
             animation-iteration-count: infinite;
             transition: margin 0.2s ease;
         }
-        .modal-area:has(label[for="modal"]:hover) > p:first-child {
+        .modal-area:has(label[for="modal"]:hover) > p:first-of-type {
             display: inline;
         }
-        body:has(label[for="modal"]:hover) > p:first-child {
+        body:has(label[for="modal"]:hover) > p:first-of-type {
             display: inline;
         }
         .catchmeifyoucan {
