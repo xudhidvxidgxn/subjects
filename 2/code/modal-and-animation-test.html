@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modal-and-animation-test</title>
     <style>
-        .modal-area > p:first-child, body > p:first-child {
-            display: none;
-        }
         * {
             box-sizing: border-box;
+        }
+        .modal-area > p:first-child, body > p:first-child {
+            display: none;
         }
         p {padding: 0; margin: 0;}
         html, body {
@@ -59,7 +59,7 @@
             padding: 10px 40px;
             border: 1px solid black;
             border-radius: 10px;
-            animation: myAnimation1 calc(1s/0.5);
+            animation: myAnimation1 calc(1s / 0.5);
             animation-iteration-count: infinite;
             transition: margin 0.2s ease;
         }
@@ -102,6 +102,10 @@
             50% {transform: translate(175%, -550%)}
             75% {transform: translate(-175%, -550%)}
             100% {transform: translate(-175%, 550%)}
+        }
+        @keyframes rotating {
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
         }
         @media screen and (max-width: 1380px) {
             .modal-area {
