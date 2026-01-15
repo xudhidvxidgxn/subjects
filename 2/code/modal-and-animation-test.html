@@ -49,7 +49,7 @@
             padding: 10px 40px;
             border: 1px solid black;
             border-radius: 10px;
-            animation: myAnimation calc(1s/0.5);
+            animation: myAnimation calc(1s/3/10/2500);
             animation-iteration-count: infinite;
         }
         .modal label[for="modal"] {
@@ -70,11 +70,21 @@
             100% { transform: scale(1); opacity: 1;}
         }
         @keyframes myAnimation {
-            0% {transform: translate(-75px, 75px)}
-            25% {transform: translate(75px, 75px)}
-            50% {transform: translate(75px, -75px)}
-            75% {transform: translate(-75px, -75px)}
-            100% {transform: translate(-75px, 75px)}
+            0% {
+                transform: translate(-75px, 75px) rotate(0deg);
+            }
+            25% {
+                transform: translate(75px, 75px) rotate(90deg);
+            }
+            50% {
+                transform: translate(75px, -75px) rotate(180deg);
+            }
+            75% {
+                transform: translate(-75px, -75px) rotate(270deg);
+            }
+            100% {
+                transform: translate(-75px, 75px) rotate(360deg);
+            }
         }
         @keyframes myAnimation1 {
             0% {transform: translate(-175%, 550%)}
