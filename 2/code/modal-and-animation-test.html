@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modal-and-animation-test</title>
     <style>
-        label[for="modal"] > p:first-child {
+        .modal-area > p:first-child {
             display: none;
         }
         * {
@@ -59,20 +59,18 @@
             padding: 10px 40px;
             border: 1px solid black;
             border-radius: 10px;
-            animation-iteration-count: infinite;
             animation: myAnimation1 calc(1s/0.5);
+            animation-iteration-count: infinite;
             transition: margin 0.2s ease;
         }
-        label[for='modal']:hover > p:first-child {
+        .modal-area:has(label[for="modal"]:hover) > p:first-child {
             display: inline;
         }
-        label[for='modal']:hover > p:last-child {
-            display: none;
+        .catchmeifyoucan {
+            position: absolute;
+            font-size: 160px;
+            font-weight: 900;
         }
-        /* @keyframes pop {
-            0% { transform: translateY(5%); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        } */
         @keyframes pop {
             0% { transform: scale(0); opacity: 0;}
             50% {transform: scale(1.05);}
@@ -115,23 +113,31 @@
             100% {transform: translate(-20vw, 25vh)}
             }
         }
+        @media screen and (max-width: 800px) {
+            .catchmeifyoucan {
+                font-size: 140px;
+            }
+        }
         @media screen and (max-width: 600px) {
+            .catchmeifyoucan {
+                font-size: 110px;
+            }
             @keyframes myAnimation1 {
-            0% {transform: translate(-10vw, 25vh)}
-            25% {transform: translate(10vw, 25vh)}
-            50% {transform: translate(10vw, -25vh)}
-            75% {transform: translate(-10vw, -25vh)}
-            100% {transform: translate(-10vw, 25vh)}
+                0% {transform: translate(-10vw, 25vh)}
+                25% {transform: translate(10vw, 25vh)}
+                50% {transform: translate(10vw, -25vh)}
+                75% {transform: translate(-10vw, -25vh)}
+                100% {transform: translate(-10vw, 25vh)}
             }
         }
         @media screen and (max-width: 500px) {
             @keyframes myAnimation1 {
-            0% {transform: translate(-5vw, 25vh)}
-            25% {transform: translate(5vw, 25vh)}
-            50% {transform: translate(5vw, -25vh)}
-            75% {transform: translate(-5vw, -25vh)}
-            100% {transform: translate(-5vw, 25vh)}
-            }
+                0% {transform: translate(-5vw, 25vh)}
+                25% {transform: translate(5vw, 25vh)}
+                50% {transform: translate(5vw, -25vh)}
+                75% {transform: translate(-5vw, -25vh)}
+                100% {transform: translate(-5vw, 25vh)}
+                }
         }
     </style>
 </head>
@@ -140,8 +146,8 @@
     <input type="checkbox" id="modal" class="modal-button" checked hidden>
     <div class="modal">
         <div class="modal-area">
+            <p class="catchmeifyoucan">못잡겠쥐?</p>
             <label for="modal" style="display: flex; justify-content: center; align-items: center; width: 250px;">
-                <p>못잡겠쥐?</p>
                 <p>여기를 눌러 종료하세요</p>
             </label>
         </div>
