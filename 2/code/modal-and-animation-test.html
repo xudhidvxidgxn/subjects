@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modal-and-animation-test</title>
     <style>
-        .modal-area > p:first-child {
+        .modal-area > p:first-child, body > p:first-child {
             display: none;
         }
         * {
@@ -64,6 +64,9 @@
             transition: margin 0.2s ease;
         }
         .modal-area:has(label[for="modal"]:hover) > p:first-child {
+            display: inline;
+        }
+        body:has(label[for="modal"]:hover) > p:first-child {
             display: inline;
         }
         .catchmeifyoucan {
@@ -142,6 +145,7 @@
     </style>
 </head>
 <body>
+    <p class="catchmeifyoucan">못잡겠쥐?</p>
     <label for="modal">여기를 눌러 시작하세요</label>
     <input type="checkbox" id="modal" class="modal-button" checked hidden>
     <div class="modal">
