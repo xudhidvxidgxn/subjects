@@ -1,0 +1,37 @@
+* {box-sizing: border-box;}
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+fieldset {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+fieldset > legend {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 1em;
+    padding: 0 0.8em;
+}
+label {
+    margin-right: 5px;
+}
+span {
+    color: red;
+    font-size: 1.2em;
+}
+fieldset > div {
+    margin: 10px 6px;
+}
+fieldset > div:first-of-type {
+    margin: 0 6px;
+}
+button[type="submit"] {
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
