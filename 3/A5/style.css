@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -23,17 +27,17 @@ body {
 }
 
 .notice {
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 20px;
 }
 
 .notice-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .notice-classification {
