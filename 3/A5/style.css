@@ -12,7 +12,13 @@ body {
     background-color: rgb(252, 252, 252);
 }
 
+.notice-header {
+    display: flex;
+
+}
+
 .notice {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
