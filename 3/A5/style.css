@@ -24,6 +24,7 @@ body {
     background-color: #fff;
     border: 1px solid #e2e2e2;
     border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .notice {
@@ -32,6 +33,15 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
+    border: 1px solid #e2e2e2;
+}
+
+.notice:first-of-type {
+    border: none;
+}
+
+.notice:last-of-type {
+    border: none;
 }
 
 .notice-header {
@@ -41,9 +51,15 @@ body {
 }
 
 .notice-classification {
-    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.3em 1.8em;
     color: #fff;
     border-radius: 2em;
+}
+
+.notice-title {
+    font-weight: 700;
 }
 
 .imp {
