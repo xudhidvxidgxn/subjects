@@ -22,7 +22,6 @@ body {
     align-items: center;
     width: 700px;
     background-color: #fff;
-    border: 1px solid #e2e2e2;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -33,11 +32,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
-    border: 1px solid #e2e2e2;
-}
-
-.notice:first-of-type {
-    border: none;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .notice:last-of-type {
@@ -60,6 +55,10 @@ body {
 
 .notice-title {
     font-weight: 700;
+}
+
+.notice-date {
+    color: rgb(121, 121, 121);
 }
 
 .imp {
