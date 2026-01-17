@@ -109,7 +109,7 @@ arrow function
 const sum3 = () => {}
 */
 
-// backtick (`)
+// backtick (`) : 역음부호
 // singlequote (')
 // doublequote (")
 // colon (:)
@@ -128,12 +128,8 @@ function add(a, b) {
 }
 
 function isEven(num) {
-    if (num % 2 == 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    if (num % 2 == 0) { return true; }
+    else { return false; }
 }
 
 console.log(hello());
