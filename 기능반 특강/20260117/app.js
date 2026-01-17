@@ -132,15 +132,15 @@ function isEven(num) {
     else { return false; }
 }
 
-console.log(hello());
-console.log(hello1(`홍길동`));
+//console.log(hello());
+//console.log(hello1(`홍길동`));
 
-console.log(add(3, 4));
+//console.log(add(3, 4));
 
-console.log(isEven(2));
-console.log(isEven(3));
+//console.log(isEven(2));
+//console.log(isEven(3));
 
-/* 
+/*
 == (적당히 비슷하면)
     Truth
     Falsy
@@ -148,8 +148,59 @@ console.log(isEven(3));
 === (완전히 비슷하면)
     strict equality
 
-!= 
-    
-!== 
+!=
+
+!==
     strict inequality
 */
+
+// for (let i = 0; i < 10; i++) {}
+
+// if () {}
+// else if () {}
+// else {}
+
+// switch () {}
+
+//const arr = []; 배열 : 대괄호
+//const obj = {}; 객체 : 중괄호
+
+//const arr = [];
+//const obj = {};
+
+//arr.push(1);
+
+//console.log(arr)
+
+//const arr = [1,2,3,4,5];
+
+//arr = "1";
+
+//arr.forEach(x => {
+//    console.log(x)
+//})
+
+// number -> 소수점 만들기
+const num1 = 3.141592;
+console.log(num1.toFixed())
+
+//string
+//length : 길이를 알아내는 애
+const a = "하나둘";
+console.log(a.length);
+
+//includes : 포합하고 있는지 확인하는 애 (boolean: true, false)
+const a2 = "양영디지털고등학교";
+console.log(a2.includes("양"))
+
+//indexOf : 해당하는 문자가 몇 번째에 있는지 알아내는 애, 없으면 -1
+const a3 = "양영디지털고등학교";
+console.log(a3.indexOf("양영"))
+console.log(a3.indexOf("디지털"))
+console.log(a3.indexOf("양ㅁ"))
+
+//repeat
+const a4 = "양";
+console.log(a4.repeat(3))
+
+console.log(String.prototype)
