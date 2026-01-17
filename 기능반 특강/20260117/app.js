@@ -1,5 +1,5 @@
 // 자바스크립트 변수 선언
-// var, let, const 
+// var, let, const
 
 /*python : a = 1;
 java : int a = 1;*/
@@ -50,7 +50,7 @@ var a = 10;
 let: 
     - 변수가 최상단으로 끌어올려진다 (호이스팅)
     - 변수에 선언 전에 접근이 불가능한 상태.
-    - let은 중복 선언 불가 
+    - let에는 중복 선언 불가 
 
 let a = 10;
     - let a가 선언 된다.
