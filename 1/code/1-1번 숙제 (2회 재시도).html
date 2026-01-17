@@ -1,44 +1,101 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1403 김민재 1-1번숙제 (2회 재시도)</title>
     <link rel="stylesheet" href="../style/style1.css">
 </head>
+
 <body>
     <section id="bookmark-sidebar">
         <!-- 사이드바 내용 작성 -->
-        <div style="display: flex; gap: 10px; margin-bottom: 40px; align-items: center; text-decoration: none; color: inherit;">
-            <a href="../code/1-1번 숙제 (2회 재시도).html"><div class="book"><img src="../images/bookmark-.png" alt="bookmark"></div>
-            <div class="logo">
-                Bookmark Manager
-            </div></a>
+        <div
+            style="display: flex; gap: 10px; margin-bottom: 40px; align-items: center; text-decoration: none; color: inherit;">
+            <a href="../code/1-1번 숙제 (2회 재시도).html">
+                <div class="book"><img src="../images/bookmark-.png" alt="bookmark"></div>
+                <div class="logo">
+                    Bookmark Manager
+                </div>
+            </a>
         </div>
         <div class="bookmark-categorize">
             <input type="radio" name="category" id="Home" checked hidden>
             <label for="Home" class="category svg-inputed"><img src="../images/home.png" alt="home">Home</label>
             <input type="radio" name="category" id="Archived" hidden>
-            <label for="Archived" class="category svg-inputed"><img src="../images/Archived.png" alt="Archived">Archived</label>
+            <label for="Archived" class="category svg-inputed"><img src="../images/Archived.png"
+                    alt="Archived">Archived</label>
         </div>
         <p class="subtitle">TAGS</p>
-        <label><div class="TAG"><input type="checkbox">AI<div class="number-circle">1</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Community<div class="number-circle">5</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Compatibility<div class="number-circle">1</div></div></label>
-        <label><div class="TAG"><input type="checkbox">CSS<div class="number-circle">6</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Design<div class="number-circle">1</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Framework<div class="number-circle">2</div></div></label>
-        <label><div class="TAG"><input type="checkbox">GIT<div class="number-circle">1</div></div></label>
-        <label><div class="TAG"><input type="checkbox">HTML<div class="number-circle">2</div></div></label>
-        <label><div class="TAG"><input type="checkbox">JavaScript<div class="number-circle">3</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Layout<div class="number-circle">3</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Learning<div class="number-circle">6</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Performance<div class="number-circle">2</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Practice<div class="number-circle">5</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Reference<div class="number-circle">4</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Tips<div class="number-circle">4</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Tools<div class="number-circle">4</div></div></label>
-        <label><div class="TAG"><input type="checkbox">Tutorial<div class="number-circle">3</div></div></label>
+        <label>
+            <div class="TAG"><input type="checkbox">AI<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Community<div class="number-circle">5</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Compatibility<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">CSS<div class="number-circle">6</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Design<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Framework<div class="number-circle">2</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">GIT<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">HTML<div class="number-circle">2</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">JavaScript<div class="number-circle">3</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Layout<div class="number-circle">3</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Learning<div class="number-circle">6</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Performance<div class="number-circle">2</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Practice<div class="number-circle">5</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Reference<div class="number-circle">4</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Tips<div class="number-circle">4</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Tools<div class="number-circle">4</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Tutorial<div class="number-circle">3</div>
+            </div>
+        </label>
     </section>
     <section id="bookmark-library">
         <!-- 북마크 라이브러리 내용 작성 -->
@@ -56,6 +113,7 @@
             <div class="profile-And-Button">
                 <!-- 프로필 및 버튼 내용 작성 -->
                 <div class="addButton">+ Add Bookmark</div>
+                <div class="addButton1">+</div>
                 <div class="profile"><img src="../images/ow.gif" alt="ow"></div>
             </div>
         </div>
@@ -84,7 +142,9 @@
                     </div>
                     <hr>
                     <div class="bookmark-main">
-                        <p class="bookmark-description">Improve your front-end coding skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.</p>
+                        <p class="bookmark-description">Improve your front-end coding skills by building real projects.
+                            Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
+                        </p>
                     </div>
                     <div class="bookmark-tags">
                         <div class="bookmark-tag">Practice</div>
@@ -118,7 +178,8 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps
+                            The MDN Web Docs site provides information about Open Web technologies including HTML, CSS,
+                            and APIs for both Web sites and progressive web apps
                         </p>
                     </div>
                     <div class="bookmark-tags">
@@ -154,7 +215,8 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            The library for web and native user interfaces. Build user interfaces out of individual pieces called components.
+                            The library for web and native user interfaces. Build user interfaces out of individual
+                            pieces called components.
                         </p>
                     </div>
                     <div class="bookmark-tags">
@@ -189,7 +251,8 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation.
+                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and
+                            creative tasks through natural conversation.
                         </p>
                     </div>
                     <div class="bookmark-tags">
@@ -224,7 +287,8 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            Guidance to build modern web experiences that work on any browser. Learn about web vitals, PWAs, and more.
+                            Guidance to build modern web experiences that work on any browser. Learn about web vitals,
+                            PWAs, and more.
                         </p>
                     </div>
                     <div class="bookmark-tags">
@@ -236,7 +300,7 @@
                     <div class="bookmark-footer">
                         <div class="bookmark-info">
                             <div class="svg-inputed">15</div>
-                            <div class="svg-inputed">16 Aug</div>   
+                            <div class="svg-inputed">16 Aug</div>
                             <div class="svg-inputed">15 Feb</div>
                         </div>
                         <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
@@ -259,7 +323,8 @@
                     <hr>
                     <div class="bookmark-main">
                         <p class="bookmark-description">
-                            A utility-first CSS framework for rapidly building modern websites without ever leaving your HTML
+                            A utility-first CSS framework for rapidly building modern websites without ever leaving your
+                            HTML
                         </p>
                     </div>
                     <div class="bookmark-tags">
@@ -386,4 +451,5 @@
         </div>
     </section>
 </body>
+
 </html>
