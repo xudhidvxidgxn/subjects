@@ -63,7 +63,7 @@ console.log(a6);
 //includes: 포함하는가?
 //join: split의 반대 (합치기)
 console.log(a5.includes(1));
-console.log(a5.join(","))
+console.log(a5.join(","));
 
 //find : 값을 찾는다. (반환: 값)
 //findIndex : 값을 찾는다. (반환: 인덱스)
@@ -137,3 +137,26 @@ function toUpperCaseArray(arr) {
     return arr.map((value) => value.toUpperCase())
 }
 console.log(toUpperCaseArray(["apple", "banana", "cherry"]));
+
+function areAllEven(arr) {
+    return arr.every((value) => value % 2 === 0);
+}
+console.log(areAllEven([2, 4, 6, 8]));
+console.log(areAllEven([2, 4, 7, 6, 8]));
+
+function commonElements(arr1, arr2) {
+    let res = [];
+    for (let index = 0; index < arr1.length; index++) {
+        const element = arr1[index];
+        for (let i = 0; i < arr2.length; i++) {
+            const element1 = arr2[i];
+            if (element === element1 && !(res.includes(element))) {
+                res.push(element);
+            }
+        }
+    }
+    return res;
+}
+console.log(commonElements([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
+console.log(commonElements([2, 3, 5, 7], [1, 2, 3, 4]));
+console.log(commonElements([2, 3, 3, 7], [1, 3, 3, 4]));
