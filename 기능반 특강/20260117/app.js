@@ -39,7 +39,7 @@ var = 10;
 
 */
 
- 
+
 // var: 
 //    - 변수가 최상단으로 끌어올려진다 (호이스팅)
 //    - 변수 선언 전에 호출할 수 있다.
@@ -108,3 +108,32 @@ let sum2 = function() {
 arrow function
 const sum3 = () => {}
 */
+
+function hello() {
+    return `안녕하세요`;
+}
+
+function hello1(name) {
+    return `안녕하세요 ${name} 님!`;
+}
+
+function add(a, b) {
+    return a + b;
+}
+
+function isEven(num) {
+    if (num % 2 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(hello());
+console.log(hello1(`홍길동`));
+
+console.log(add(3, 4));
+
+console.log(isEven(2));
+console.log(isEven(3));
