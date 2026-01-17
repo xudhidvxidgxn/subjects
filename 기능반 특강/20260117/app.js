@@ -188,7 +188,7 @@ console.log(num1.toFixed())
 //string
 //length : 길이를 알아내는 애
 const a = "하나둘";
-console.log(a.length);
+console.log(a.length)
 
 //includes : 포합하고 있는지 확인하는 애 (boolean: true, false)
 const a2 = "양영디지털고등학교";
