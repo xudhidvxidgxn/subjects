@@ -1,12 +1,18 @@
-html{transition: background-color 0.5s;}
+html {
+    transition: background-color 0.5s;
+}
+
 [type="checkbox"] {
     appearance: none;
     position: relative;
-    border: max(2px, 0.1em) solid #fff;
+    /*border: max(2px, 0.1em) solid #fff;*/
     border-radius: 1.25em;
-    width: 2.25em;
-    height: 1.25em;
+    width: 2em;
+    height: 1em;
+    background-color: lightgray;
+    transition: background-color 0.5s;
 }
+
 [type="checkbox"]::before {
     content: "";
     position: absolute;
@@ -18,25 +24,16 @@ html{transition: background-color 0.5s;}
     background-color: #fff;
     transition: left 250ms linear;
 }
-.toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-radius: 15px;
-    background-color: lightgray;
-    transform: translate(-50%, -50%);
-    transition: background-color 0.5s;
-}
+
 [type="checkbox"]:checked::before {
     background-color: yellow;
-    left: 1em;
+    left: 0.95em;
 }
+
+[type="checkbox"]:checked {
+    background-color: darkblue;
+}
+
 html:has([type="checkbox"]:checked) {
     background-color: #222;
-}
-.toggle:has([type="checkbox"]:checked) {
-    background-color: darkblue;
 }
