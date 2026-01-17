@@ -10,7 +10,7 @@ console.log(a1, a2);
 const a3 = [1, 2, 3, 4, 5];
 
 //const r1 = a3.every((value) => {
-//    console.log(`${value} < 10`);
+//console.log(`${value} < 10`);
 //    if (value < 10) {
 //        return true;
 //    }
@@ -47,7 +47,7 @@ console.log(a4)
 //map : 값을 반환 (내가 원하는 형태로 변환)
 const a5 = [1, 2, 3, 4, 5];
 
-const r5 = a5.filter((value) => value % 2 === 0);
+const r5 = "filter : " + a5.filter((value) => value % 2 === 0);
 
 console.log(r5);
 
@@ -110,3 +110,29 @@ const r13 = a13.reduce((acc, cur) => {
 }, 0);
 
 console.log(r13)
+
+
+function getMaxNumber(arr) {
+    let max = arr[0];
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        if (max < element) { max = element; }
+    }
+    return max;
+}
+console.log(getMaxNumber([1, 7, 3, 5, 10, 4]));
+
+function countOccurrences(arr, element) {
+    let res = 0;
+    for (let index = 0; index < arr.length; index++) {
+        const ele = arr[index];
+        if (element === ele) { res += 1; }
+    }
+    return res;
+}
+console.log(countOccurrences([1, 2, 3, 2, 4, 2, 5], 2));
+
+function toUpperCaseArray(arr) {
+    return arr.map((value) => value.toUpperCase())
+}
+console.log(toUpperCaseArray(["apple", "banana", "cherry"]));
