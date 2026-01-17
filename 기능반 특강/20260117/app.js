@@ -199,8 +199,16 @@ console.log(a3.indexOf("양영"))
 console.log(a3.indexOf("디지털"))
 console.log(a3.indexOf("양ㅁ"))
 
-//repeat
+//repeat : 문자를 반복시킨다. (거의 쓸 일 없음)
 const a4 = "양";
 console.log(a4.repeat(3))
+
+//replace : 문자를 바꾸다
+const a5 = "양영디지털양영고등학교";
+console.log(a5.replace("양영", ""))
+
+//repalceAll : 모든 문자를 바꾸다
+const a6 = "양영디지털양영고등학교";
+console.log(a6.replaceAll("양영", ""))
 
 console.log(String.prototype)
