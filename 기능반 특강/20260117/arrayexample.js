@@ -147,12 +147,9 @@ console.log(areAllEven([2, 4, 7, 6, 8]));
 function commonElements(arr1, arr2) {
     let res = [];
     for (let index = 0; index < arr1.length; index++) {
-        const element = arr1[index];
         for (let i = 0; i < arr2.length; i++) {
-            const element1 = arr2[i];
-            if (element === element1 && !(res.includes(element))) {
-                res.push(element);
-            }
+            if (res.includes(arr1[index])) { continue; }
+            if (arr1[index] === arr2[i]) { res.push(arr1[index]); }
         }
     }
     return res;
