@@ -1,8 +1,11 @@
 // 자바스크립트 변수 선언
 // var, let, const
 
-/*python : a = 1;
-java : int a = 1;*/
+/*
+python : a = 1;
+java : int a = 1;
+*/
+
 /* var a = 10;
 
 let b = 10; */
@@ -36,27 +39,72 @@ var = 10;
 
 */
 
+ 
+// var: 
+//    - 변수가 최상단으로 끌어올려진다 (호이스팅)
+//    - 변수 선언 전에 호출할 수 있다.
+//    - 이 때 호출된 변수는 undefined다. (값이 할당되지 않고 선언만 된 상태)
+//    - 덮어씌워진다.
+
+//    var a = 10;
+//        - var a가 선언 된다.
+//        - a가 undefined로 초기화 된다.
+//        - a를 console.log로 출력한다.
+//        - a에 값이 10이 할당된다.
+
+// let: const도 마찬가지
+//    - 변수가 최상단으로 끌어올려진다 (호이스팅)
+//    - 변수에 선언 전에 접근이 불가능한 상태.
+//    - 변수가 중복 선언되기 불가 
+
+//    let a = 10;
+//        - let a가 선언 된다.
+//        - a가 undefined로 초기화 된다.
+//        - a를 console.log로 출력하려고 해서 오류가 난다.
+//        - a에 값이 10이 할당된다.
+
+/*
+javascript의 데이터 타입: 
+    - number
+    - string
+    - array
+    - object
+    - boolean
+    - undefined
+    - null 
+
+    - big int
+    - symbol
+
+undefined, null
+
+undefined: 할당이 안 됨
+null: 할당 함
+
+.prototype : 
+기본 객체 보기
+
+.prototype 에 있는 함수에서 상속
+object는 항상 상속
+
+number, string, boolean과 undefined, null의 차이
+*/
+
 /* 
-var: 
-    - 변수가 최상단으로 끌어올려진다 (호이스팅)
-    - 변수 선언 전에 호출할 수 있다.
-    - 이 때 호출된 변수는 undefined다. (값이 할당되지 않고 선언만 된 상태)
-    - 덮어씌워진다.
+함수 선언 방법 :
 
-    var a = 10;
-        - var a가 선언 된다.
-        - a가 undefined로 초기화 된다.
-        - a를 console.log로 출력한다.
-        - a에 값이 10이 할당된다.
+console.log(sum1)
 
-let: 
-    - 변수가 최상단으로 끌어올려진다 (호이스팅)
-    - 변수에 선언 전에 접근이 불가능한 상태.
-    - 변수가 중복 선언되기 불가 
+일반 function
+function sum1() {
+    return 'a';
+}
 
-    let a = 10;
-        - let a가 선언 된다.
-        - a가 undefined로 초기화 된다.
-        - a를 console.log로 출력하려고 해서 오류가 난다.
-        - a에 값이 10이 할당된다.
+변수 function
+let sum2 = function() {
+
+}
+
+arrow function
+const sum3 = () => {}
 */
