@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,29 @@
         * {
             box-sizing: border-box;
         }
-        .modal-area > p:first-of-type, body > p:first-of-type {
+
+        .modal-area>p:first-of-type,
+        body>p:first-of-type {
             display: none;
         }
-        p {padding: 0; margin: 0;}
-        html, body {
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
             margin: 0;
             padding: 0;
         }
+
         .modal {
             display: none;
             position: relative;
         }
-        input#modal:checked + .modal {
+
+        input#modal:checked+.modal {
             display: flex;
             position: fixed;
             top: 0;
@@ -31,6 +42,7 @@
             height: 100%;
             background-color: rgb(0, 0, 0, 0.5);
         }
+
         body {
             display: flex;
             align-items: center;
@@ -38,6 +50,7 @@
             width: 100vw;
             height: 100vh;
         }
+
         .modal-area {
             display: flex;
             align-items: center;
@@ -48,6 +61,7 @@
             animation: pop 0.5s ease;
             padding: 40px;
         }
+
         label[for="modal"] {
             padding: 10px 40px;
             border: 1px solid black;
@@ -55,6 +69,7 @@
             animation: myAnimation calc(1s/3/10/2500);
             animation-iteration-count: infinite;
         }
+
         .modal label[for="modal"] {
             padding: 10px 40px;
             border: 1px solid black;
@@ -63,95 +78,184 @@
             animation-iteration-count: infinite;
             transition: margin 0.2s ease;
         }
-        .modal-area:has(label[for="modal"]:hover) > p:first-of-type {
+
+        .modal-area:has(label[for="modal"]:hover)>p:first-of-type {
             display: inline;
         }
-        body:has(label[for="modal"]:hover) > p:first-of-type {
+
+        body:has(label[for="modal"]:hover)>p:first-of-type {
             display: inline;
         }
+
         .catchmeifyoucan {
             position: absolute;
             font-size: 160px;
             font-weight: 900;
         }
+
         @keyframes pop {
-            0% { transform: scale(0); opacity: 0;}
-            50% {transform: scale(1.05);}
-            100% { transform: scale(1); opacity: 1;}
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
+
         @keyframes myAnimation {
             0% {
                 transform: translate(-75px, 75px) rotate(0deg);
             }
+
             25% {
                 transform: translate(75px, 75px) rotate(90deg);
             }
+
             50% {
                 transform: translate(75px, -75px) rotate(180deg);
             }
+
             75% {
                 transform: translate(-75px, -75px) rotate(270deg);
             }
+
             100% {
                 transform: translate(-75px, 75px) rotate(360deg);
             }
         }
+
         @keyframes myAnimation1 {
-            0% {transform: translate(-175%, 550%)}
-            25% {transform: translate(175%, 550%)}
-            50% {transform: translate(175%, -550%)}
-            75% {transform: translate(-175%, -550%)}
-            100% {transform: translate(-175%, 550%)}
+            0% {
+                transform: translate(-175%, 550%)
+            }
+
+            25% {
+                transform: translate(175%, 550%)
+            }
+
+            50% {
+                transform: translate(175%, -550%)
+            }
+
+            75% {
+                transform: translate(-175%, -550%)
+            }
+
+            100% {
+                transform: translate(-175%, 550%)
+            }
         }
+
         @keyframes rotating {
-            0% {transform: rotate(0deg)}
-            100% {transform: rotate(360deg)}
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
         }
+
         @media screen and (max-width: 1380px) {
             .modal-area {
                 width: calc(100% - 100px);
                 aspect-ratio: 9/12;
             }
+
             @keyframes myAnimation1 {
-            0% {transform: translate(-20vw, 25vh)}
-            25% {transform: translate(20vw, 25vh)}
-            50% {transform: translate(20vw, -25vh)}
-            75% {transform: translate(-20vw, -25vh)}
-            100% {transform: translate(-20vw, 25vh)}
+                0% {
+                    transform: translate(-20vw, 25vh)
+                }
+
+                25% {
+                    transform: translate(20vw, 25vh)
+                }
+
+                50% {
+                    transform: translate(20vw, -25vh)
+                }
+
+                75% {
+                    transform: translate(-20vw, -25vh)
+                }
+
+                100% {
+                    transform: translate(-20vw, 25vh)
+                }
             }
         }
+
         @media screen and (max-width: 800px) {
             .catchmeifyoucan {
                 font-size: 140px;
             }
         }
+
         @media screen and (max-width: 600px) {
             .catchmeifyoucan {
                 font-size: 110px;
             }
+
             @keyframes myAnimation1 {
-                0% {transform: translate(-10vw, 25vh)}
-                25% {transform: translate(10vw, 25vh)}
-                50% {transform: translate(10vw, -25vh)}
-                75% {transform: translate(-10vw, -25vh)}
-                100% {transform: translate(-10vw, 25vh)}
+                0% {
+                    transform: translate(-10vw, 25vh)
+                }
+
+                25% {
+                    transform: translate(10vw, 25vh)
+                }
+
+                50% {
+                    transform: translate(10vw, -25vh)
+                }
+
+                75% {
+                    transform: translate(-10vw, -25vh)
+                }
+
+                100% {
+                    transform: translate(-10vw, 25vh)
+                }
             }
         }
+
         @media screen and (max-width: 500px) {
             @keyframes myAnimation1 {
-                0% {transform: translate(-5vw, 25vh)}
-                25% {transform: translate(5vw, 25vh)}
-                50% {transform: translate(5vw, -25vh)}
-                75% {transform: translate(-5vw, -25vh)}
-                100% {transform: translate(-5vw, 25vh)}
+                0% {
+                    transform: translate(-5vw, 25vh)
                 }
+
+                25% {
+                    transform: translate(5vw, 25vh)
+                }
+
+                50% {
+                    transform: translate(5vw, -25vh)
+                }
+
+                75% {
+                    transform: translate(-5vw, -25vh)
+                }
+
+                100% {
+                    transform: translate(-5vw, 25vh)
+                }
+            }
         }
     </style>
 </head>
+
 <body>
     <p class="catchmeifyoucan">못잡겠쥐?</p>
     <label for="modal">여기를 눌러 시작하세요</label>
-    <input type="checkbox" id="modal" class="modal-button" hidden>
+    <input type="checkbox" id="modal" class="modal-button" checked hidden>
     <div class="modal">
         <div class="modal-area">
             <p class="catchmeifyoucan">못잡겠쥐?</p>
@@ -161,4 +265,5 @@
         </div>
     </div>
 </body>
+
 </html>
