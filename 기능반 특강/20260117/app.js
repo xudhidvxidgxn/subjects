@@ -180,7 +180,8 @@ function isEven(num) {
 //    console.log(x)
 //})
 
-// number -> 소수점 만들기
+// number
+//toFixed : 소수점 절삭
 const num1 = 3.141592;
 console.log(num1.toFixed())
 
