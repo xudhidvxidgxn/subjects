@@ -109,6 +109,12 @@ arrow function
 const sum3 = () => {}
 */
 
+// backtick (`)
+// singlequote (')
+// doublequote (")
+// colon (:)
+// semicolon (;)
+
 function hello() {
     return `안녕하세요`;
 }
