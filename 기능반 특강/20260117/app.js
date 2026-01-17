@@ -212,4 +212,27 @@ console.log(a5.replace("양영", ""))
 const a6 = "양영디지털양영고등학교";
 console.log(a6.replaceAll("양영", ""))
 
+//split : 문자를 기준으로 나눠서 배열로 만든다.
+const a7 = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10";
+console.log(a7.split(","));
+
+//slice : start에서부터 end직전까지 절삭(인덱스 기준)
+//substring도 마찬가지
+//end번째 글자까지 뽑는다 봐도 됨
+const a8 = "1,2,3,4,5,6,7";
+console.log(a8.slice(0, -1))
+console.log(a8.substring(0, -1))
+
+//toUpperCase : 대문자로, toLowerCase: 소문자로
+const a9 = "Test";
+console.log(a9.toUpperCase())
+console.log(a9.toLowerCase())
+
+//trim : 공백 없애기
+const a10 = " te st ";
+console.log(a10.trim())
+console.log(a10.replaceAll(" ", ""))
+
+
+
 console.log(String.prototype)
