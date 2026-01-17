@@ -139,3 +139,17 @@ console.log(add(3, 4));
 
 console.log(isEven(2));
 console.log(isEven(3));
+
+/* 
+== (적당히 비슷하면)
+    Truth
+    Falsy
+
+=== (완전히 비슷하면)
+    strict equality
+
+!= 
+    
+!== 
+    strict inequality
+*/
