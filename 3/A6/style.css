@@ -21,7 +21,7 @@ footer {
 
 footer>.top-footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 350px;
     border-bottom: 0.2px solid #e2e2e2;
@@ -35,6 +35,10 @@ footer>.bot-footer {
     height: calc(500px - 350px);
     align-items: center;
     padding: 0 20px;
+}
+
+.top-footer-sub {
+    color: #fff;
 }
 
 .title {
@@ -54,4 +58,11 @@ footer>.bot-footer {
 
 .bot-right {
     color: rgb(180, 180, 180)
+}
+
+.shortcuts {
+    /* df */
+    display: flex;
+    /* fxd */
+    flex-direction: column;
 }
