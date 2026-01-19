@@ -8,10 +8,15 @@ body {
     margin: 0;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 footer {
     width: 100%;
     height: 500px;
-    background-color: rgb(0, 38, 255);
+    background-color: rgb(44, 58, 80);
 }
 
 footer>.top-footer {
@@ -19,4 +24,22 @@ footer>.top-footer {
     flex-direction: column;
     height: 350px;
     border-bottom: 0.2px solid #e2e2e2;
+    padding: 60px 10px;
+}
+
+footer>.bot-footer {
+    display: flex;
+    flex-direction: space-between;
+    height: calc(500px - 350);
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 45px;
+    color: rgb(70, 119, 255)
+}
+
+.subscription {
+    color: #fff;
 }
