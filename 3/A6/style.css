@@ -15,5 +15,6 @@ footer {
 }
 
 footer>.top-footer {
-    border: 1px solid #e2e2e2;
+    height: 350px;
+    border-bottom: 0.2px solid #e2e2e2;
 }
