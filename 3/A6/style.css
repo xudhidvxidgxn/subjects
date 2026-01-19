@@ -39,6 +39,8 @@ footer>.bot-footer {
 
 .top-footer-sub {
     color: #fff;
+    display: flex;
+    gap: 20px;
 }
 
 .title {
