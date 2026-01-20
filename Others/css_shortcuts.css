@@ -5,7 +5,7 @@ box-shadow: 1px 1px 5px #b9b9b9; = bxsh1:1:5:#b9b9b9
 bxsh:1:1:5:#dd
 display: flex; = df
 gap: 10px; = g10
-fxd = flex-direction
+fxd = flex-direction: row;
 jc = justify-content
     jcc = justify-content: center;
     jcsb = justify-content: space-between;
