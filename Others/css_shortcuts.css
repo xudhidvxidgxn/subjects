@@ -25,4 +25,6 @@ margin: 10px; = m10
     margin-right: 10px; = mr10
     margin-bottom: 10px; = mb10
     margin-left: 10px; = ml10
+cursor: pointer; = cu , cup
+    cursor: default; = cud
 */

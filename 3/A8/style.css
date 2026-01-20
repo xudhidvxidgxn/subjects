@@ -132,6 +132,7 @@ span.pm {
     padding: 12px 18px;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
 }
 
 .continue {
