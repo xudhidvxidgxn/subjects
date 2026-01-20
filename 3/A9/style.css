@@ -75,3 +75,11 @@ div.third {
 .gr {
     background-color: green;
 }
+.gallery-contents {
+    display: flex;
+    width: 1600px;
+}
+.gallery-content {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
