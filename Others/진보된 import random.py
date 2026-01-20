@@ -5,7 +5,7 @@ p = 0; q = 0
 확천 = False; 명함 = False; 전광 = False; 풀돌 = False; 풀재 = False
 rec = []; jamMode = False
 
-currentPickUp = '달리아'
+currentPickUp = ''
 
 def full(x):
     global stack, 확천, 명함, a, chan, ab, astack, p, q, 전광, 풀돌, 풀재
