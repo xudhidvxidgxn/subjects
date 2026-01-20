@@ -8,7 +8,12 @@ jc = justify-content
 ai = align-items: center;
     ""
     ""
+background-color: #fff = bc
+border-radius: 15px; = brs15
 color: rgb(a, b, c) = crabc
 font-weight: 500 = fw500
 font-size: 24px; = fz24
+text-align: center; = tac
+margin: 10px; = m10
+    margin-top: 10px; = mt10
 */
