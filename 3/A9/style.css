@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    z-index: 5;
 }
 
 body {
@@ -18,20 +17,61 @@ body {
     z-index: 0;
 }
 
-label[for^="left"] {
+*[class^="left"] {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 92%;
     left: 47%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    
+}
+
+*[class^="right"] {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 92%;
+    right: 47%;
+    width: 50px;
+    height: 50px;
     color: #fff;
     padding: 12px 18px;
     border: 1px solid #fff;
 }
 
-label[for^="right"] {
-    position: absolute;
-    top: 92%;
-    right: 47%;
-    color: #fff;
-    padding: 12px 18px;
-    border: 1px solid #fff;
+input:checked+label {
+    display: none;
+}
+
+.first {
+    z-index: 3;
+}
+
+.second {
+    z-index: 2;
+}
+
+.third {
+    z-index: 1;
+}
+div.third {
+    z-index: 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.gr {
+    background-color: green;
 }
