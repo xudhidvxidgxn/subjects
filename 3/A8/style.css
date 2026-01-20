@@ -30,6 +30,9 @@ body {
 }
 
 .cart-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -54,4 +57,28 @@ body {
 .cart-content-sub {
     line-height: 1.5em;
     color: #7c7c7c;
+}
+
+.cart-content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+span.pm {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin: 0 5px;
+}
+
+.x-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 50%;
+    background-color: red;
 }
