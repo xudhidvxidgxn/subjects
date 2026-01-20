@@ -62,9 +62,22 @@ footer>.bot-footer {
     color: rgb(180, 180, 180)
 }
 
-.shortcuts {
+.shortcuts,
+.supports {
     /* df */
     display: flex;
     /* fxd */
     flex-direction: column;
+}
+
+.shortcuts-title,
+.sup-title {
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.shortcuts>.shortcut, .supports>.support {
+    width: 8em;
+    padding: 5px 0;
+    color: rgb(160, 160, 160);
 }
