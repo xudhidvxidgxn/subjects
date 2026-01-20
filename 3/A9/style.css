@@ -76,6 +76,10 @@ div.third {
     background-color: blue;
 }
 
+.purple {
+    background-color: purple;
+}
+
 .gr {
     background-color: green;
 }
@@ -93,10 +97,16 @@ div.third {
     gap: 100px;
     width: 1600px;
     flex-shrink: 0;
+    transition: margin-left 0.3s;
 }
 
 .content>img {
     width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
 }
 
 .gallery-content>.content:nth-of-type(3)>img {
@@ -105,11 +115,13 @@ div.third {
 
 input[id="lr3"]:checked~.gallery-contents>.gallery-content:nth-of-type(1),
 input[id="lr3"]:checked~.gallery-contents>.gallery-content:nth-of-type(2) {
-    width: 0px;
+    margin-left: -1600px;
 }
+
 input[id="lr4"]:checked~.gallery-contents>.gallery-content:nth-of-type(1) {
-    width: 0px;
+    margin-left: -1600px;
 }
+
 input[id="lr2"]:checked~.gallery-contents>.gallery-content:nth-of-type(1) {
-    width: 1600px;
+    margin: 0;
 }
