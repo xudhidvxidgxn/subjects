@@ -34,6 +34,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .cart-content-header {
@@ -71,6 +72,10 @@ span.pm {
     border-radius: 5px;
     padding: 3px 8px;
     margin: 0 5px;
+}
+
+.amount {
+    font-weight: 700;
 }
 
 .x-button {
