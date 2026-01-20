@@ -125,3 +125,15 @@ input[id="lr4"]:checked~.gallery-contents>.gallery-content:nth-of-type(1) {
 input[id="lr2"]:checked~.gallery-contents>.gallery-content:nth-of-type(1) {
     margin: 0;
 }
+
+label:hover {
+    cursor: pointer;
+}
+
+label:active {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.third:active {
+    background-color: rgb(255, 255, 255, 0.3);
+}
