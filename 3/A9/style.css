@@ -18,7 +18,7 @@ body {
     z-index: 0;
 }
 
-label[for="left"] {
+label[for^="left"] {
     position: absolute;
     top: 92%;
     left: 47%;
@@ -27,7 +27,7 @@ label[for="left"] {
     border: 1px solid #fff;
 }
 
-label[for="right"] {
+label[for^="right"] {
     position: absolute;
     top: 92%;
     right: 47%;
