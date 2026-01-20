@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            height: 100px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        nav {
+            height: 100px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        section {
+            width: 50%;
+            height : 200px;
+            float: left;
+        }
+        
+        article {
+            height: 100px;
+            background-color: orange;
+        }
+
+        aside {
+            width: 50%;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .clear {
+            clear: both;
+        }        
+    </style>
+</head>
+<body>
+    <!-- 시맨틱 태그 (구글 크롤링 봇이 정보를 색인하기 쉽도록)-->
+    <header>
+        &lt;header&gt;
+    </header>
+
+    <nav>
+        &lt;nav&gt;
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                &lt;section&gt;
+            </article>
+
+            <article>
+                &lt;article&gt;
+            </article>
+        </section>
+
+        <aside>
+            &lt;aside&gt;
+        </aside>
+
+        <div class="clear"></div>
+        
+    </main>
+
+    <footer>
+        &lt;footer&gt;
+    </footer>
+
+</body>
+</html>

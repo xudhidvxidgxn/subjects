@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: column */
+            /* flex-wrap: nowrap; */
+            gap: 10px;
+            justify-content: space-around;
+        }
+        .box {
+            /*width: 200px;
+            height: 200px; */
+            
+            border: 1px solid #000;
+            text-align: center;
+            
+            line-height: 200px;
+            font-style: 80px;
+            
+            flex-basis: 250px;
+
+            display: flex;
+            
+            /* 수평 */
+            justify-content: center;     
+            
+            /* 수직 */
+            align-items: center;       
+        }
+
+        .box:nth-child(1) {
+            flex-grow: 1;
+        }
+        .box:nth-child(2) {
+            flex-grow: 1;
+        }
+        .box:nth-child(3) {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box1
+        </div><div class="box">
+            box2
+        </div>
+        <div class="box">
+            box3
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-box {
+            display: grid;  
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: repeat(3, 200px); */  
+            grid-auto-rows: 200px;
+            gap: 20px;
+        }
+        
+        .grid-box .box {
+            border: 1px solid black;
+        }
+        /* 
+            @media -> 조건부 css
+            screen -> 화면
+            and max-width: 767px; * 767이하
+        */
+        @media screen and (max-width: 767px) {
+            .grid-box {
+                grid-template-columns: repeat(2, 1fr);    
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .grid-box {
+                grid-template-columns: repeat(1, 1fr);    
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="grid-box">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                /*무언가 의 빈자리 @@@ */ 
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            aside {
+                height: 100vh;
+                width: 300px;
+                background-color: #fff;
+                border-right: 1px solid #ddd;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            main {
+                width: 100%;
+                padding-left: 300px;
+            }
+            
+            header {
+                width: 100%;
+                height: 80px;
+                border-bottom: 1px solid #ddd;
+                background-color: #fff;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            .item-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 300px;
+                gap: 30px;
+            }
+            
+            .item {
+                border-radius: 10px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <aside></aside>
+        
+        <main>
+            <header></header>
+            
+            <section>
+                <h1>All bookmarks</h1>
+                
+                <div class="item-list">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>

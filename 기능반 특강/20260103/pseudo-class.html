@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상 선택자 */
+        button {
+            width: 60px;
+            height: 40px;
+            transition: 0.25s;
+        }
+
+        button:hover {
+            width: 250px;
+        }
+        
+        button:active {
+            background-color: blue;
+        }
+
+        button:active ~ input {
+            background-color: red;
+        }
+
+        input:focus {
+            outline: 5px solid red;
+        }
+
+        input {
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <button>버튼</button>
+    <input type="text">
+    
+</body>
+</html>
