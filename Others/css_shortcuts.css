@@ -10,7 +10,8 @@ jc = justify-content
 ai = align-items: center;
     ""
     ""
-background-color: #fff = bc
+background-color: #fff = bc #fdfdfd
+border: 1px solid #e2e2e2; = bd:1:solid:#e2e2e2
 border-radius: 15px; = brs15
 color: rgb(a, b, c) = crabc
 font-weight: 500 = fw500
