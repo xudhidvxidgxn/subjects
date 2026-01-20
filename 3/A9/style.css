@@ -77,9 +77,11 @@ div.third {
 }
 .gallery-contents {
     display: flex;
+    align-items: center;
     width: 1600px;
 }
 .gallery-content {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    width: 1600px;
 }
