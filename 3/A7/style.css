@@ -29,6 +29,7 @@ p {
 .title {
     font-weight: 800;
     font-size: 28px;
+    padding: 20px 0;
 }
 
 .services {
@@ -46,7 +47,7 @@ p {
     align-items: center;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px #888888;
+    box-shadow: 1px 1px 5px #b9b9b9;
     padding: 20px;
 }
 
