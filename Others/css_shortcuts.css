@@ -28,4 +28,7 @@ margin: 10px; = m10
     margin-left: 10px; = ml10
 cursor: pointer; = cu , cup
     cursor: default; = cud
+position: relative; = po
+    position: fixed; = pof
+    position: absolute; = poa
 */
