@@ -31,4 +31,9 @@ cursor: pointer; = cu , cup
 position: relative; = po
     position: fixed; = pof
     position: absolute; = poa
+z-index: 1; = z1
+left: 500px; = l500
+right: 500px; = r:500
+bottom: 500px; = b500
+top: 500px; = t500
 */
