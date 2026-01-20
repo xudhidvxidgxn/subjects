@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fdfdfd;
+    background-color: #efefef;
     padding: 20px;
 }
 
@@ -93,4 +93,8 @@ span.pm {
     background-color: red;
     padding-top: 2px;
     padding-bottom: 6px;
+}
+.cart-payment {
+    background-color: #efefef;
+    padding: 15px 20px;
 }
