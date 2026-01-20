@@ -9,12 +9,13 @@ body {
     padding: 20px;
 }
 
-.cart-contents {
+.cart-contents-area {
     width: 800px;
     align-self: center;
     justify-self: center;
     border: 1px solid #e2e2e2;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px #dddddd;
     overflow: hidden;
 }
 
@@ -35,6 +36,10 @@ body {
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #e2e2e2;
+}
+
+.cart-contents>.cart-content:last-of-type {
+    border: none;
 }
 
 .cart-content-header {
