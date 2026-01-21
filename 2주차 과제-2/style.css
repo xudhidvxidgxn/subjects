@@ -56,6 +56,7 @@ ul {
 
 .search-area>img {
     width: 8em;
+    height: 4em;
     border: 1px solid #e2e2e2;
 }
 
@@ -80,4 +81,23 @@ ul {
 
 .shortcuts>a:nth-of-type(3)::before {
     content: "3";
+}
+
+.searchbar {
+    position: absolute;
+    left: 150px;
+    bottom: 10%;
+    width: 37%;
+    border-radius: 3em;
+    padding: 13px 25px;
+    font-size: 15px;
+    border: none;
+    background-color: #efefef;
+}
+
+.ser {
+    position: absolute;
+    top: 55%;
+    left: calc(100px + 37%);
+    transform: translateY(-50%);
 }

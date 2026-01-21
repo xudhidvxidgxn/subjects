@@ -38,6 +38,13 @@ left: 500px; = l500
 right: 500px; = r:500
 bottom: 500px; = b500
 top: 500px; = t500
+width: 500px; = w500
+    min-width: 500px; = mw500
+    max-width: 500px; = maw500
+height: 500px; = h500
 list-style-type: none; = lstn
 lst = list-style-type: disc;
+transform: ; = tf
+
+content: ''; = ct
 */
