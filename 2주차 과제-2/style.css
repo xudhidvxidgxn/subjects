@@ -124,6 +124,7 @@ label[for="list"] {
     border-radius: 3em;
     color: #fff;
     background-color: blue;
+    cursor: pointer;
 }
 
 label[for="list"]:first-of-type {
@@ -146,4 +147,34 @@ label[for="list"]:last-of-type {
 
 input:checked~label:first-of-type {
     display: none;
+}
+
+.toggle-display {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 400px;
+    width: 900px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+input:checked~div {
+    display: flex;
+}
+
+.slide-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    gap: 30px;
+}
+
+.slide-content {
+    flex: none;
+    width: 100%;
+    height: inherit;
 }
