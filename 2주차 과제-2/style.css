@@ -33,6 +33,7 @@ ul[class$="nav"] {
     list-style-type: none;
     gap: 25px;
 }
+
 ul[class="nav"] {
     gap: 45px;
 }
@@ -105,6 +106,7 @@ ul[class$="nav"]>.nav {
 }
 
 .nav-bar-2 {
+    position: relative;
     gap: 40px;
     font-size: 25px;
     justify-content: initial;
@@ -116,6 +118,7 @@ label[for="list"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 40px;
     height: 40px;
     border-radius: 3em;
@@ -124,5 +127,23 @@ label[for="list"] {
 }
 
 label[for="list"]:first-of-type {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 8px;
+    z-index: 2;
+}
+
+label[for="list"]:last-of-type {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    z-index: 1;
+}
+
+input:checked~label:first-of-type {
+    display: none;
 }
