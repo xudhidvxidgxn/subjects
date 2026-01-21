@@ -25,11 +25,13 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 1280px;
-    margin: 0 auto;
     color: #c2c2c2;
 }
 
 .nav-bar-area {
+    display: flex;
+    justify-content: center;
+    position: relative;
     width: 100vw;
     background-color: #000;
 }
