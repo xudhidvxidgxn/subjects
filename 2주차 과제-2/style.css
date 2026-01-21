@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
+html,
+body {
+    width: 100vw;
 }
 
 a {
@@ -29,6 +30,7 @@ a {
 }
 
 .nav-bar-area {
+    width: 100vw;
     background-color: #000;
 }
 
@@ -171,10 +173,10 @@ input:checked~.toggle-display {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    border-radius: 15px;
+    width: 1280px;
     margin-top: 20px;
+    border-radius: 15px;
     gap: 20px;
-    transition: margin-left 0.3s;
     animation: Slide 16s;
     animation-iteration-count: infinite;
 }
@@ -193,7 +195,7 @@ input:checked~.toggle-display {
         margin-left: calc(-1300px * 0);
     }
 
-    15% {
+    18% {
         margin-left: calc(-1300px * 0);
     }
 
@@ -201,7 +203,7 @@ input:checked~.toggle-display {
         margin-left: calc(-1300px * 1);
     }
 
-    35% {
+    38% {
         margin-left: calc(-1300px * 1);
     }
 
@@ -209,7 +211,7 @@ input:checked~.toggle-display {
         margin-left: calc(-1300px * 2);
     }
 
-    55% {
+    58% {
         margin-left: calc(-1300px * 2);
     }
 
@@ -217,7 +219,7 @@ input:checked~.toggle-display {
         margin-left: calc(-1300px * 3);
     }
 
-    75% {
+    78% {
         margin-left: calc(-1300px * 3);
     }
 
@@ -225,7 +227,7 @@ input:checked~.toggle-display {
         margin-left: calc(-1300px * 4);
     }
 
-    95% {
+    98% {
         margin-left: calc(-1300px * 4);
     }
 
@@ -279,6 +281,7 @@ ul:has(input[id="y1"]:checked)~#yeot1 {
 .content-company {
     font-size: 14px;
     margin-top: 20px;
+    color: rgb(0, 0, 0, 0.4)
 }
 
 .content-name {
@@ -308,7 +311,7 @@ ul:has(input[id="y1"]:checked)~#yeot1 {
 
 .best {
     color: rgb(50, 50, 255);
-    background-color: rgb(50, 200, 255, 0.3);
+    background-color: rgb(50, 200, 255, 0.1);
 }
 
 .free {
@@ -318,5 +321,10 @@ ul:has(input[id="y1"]:checked)~#yeot1 {
 
 .sales {
     color: rgb(255, 50, 50);
-    background-color: rgb(255, 200, 200);
+    background-color: rgb(255, 0, 0, 0.1);
+}
+
+.new {
+    color: #00b;
+    background-color: rgb(0, 0, 255, 0.1);
 }
