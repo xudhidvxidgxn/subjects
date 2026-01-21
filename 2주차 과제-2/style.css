@@ -172,6 +172,9 @@ input:checked~.toggle-display {
     border-radius: 15px;
     margin-top: 20px;
     gap: 20px;
+    transition: margin-left 0.3s;
+    animation: Slide 16s;
+    animation-iteration-count: infinite;
 }
 
 .slide-content {
@@ -181,4 +184,50 @@ input:checked~.toggle-display {
     height: 520px;
     border-radius: 15px;
     background-color: #000;
+}
+
+@keyframes Slide {
+    0% {
+        margin-left: calc(-1300px * 0);
+    }
+
+    15% {
+        margin-left: calc(-1300px * 0);
+    }
+
+    20% {
+        margin-left: calc(-1300px * 1);
+    }
+
+    35% {
+        margin-left: calc(-1300px * 1);
+    }
+
+    40% {
+        margin-left: calc(-1300px * 2);
+    }
+
+    55% {
+        margin-left: calc(-1300px * 2);
+    }
+
+    60% {
+        margin-left: calc(-1300px * 3);
+    }
+
+    75% {
+        margin-left: calc(-1300px * 3);
+    }
+
+    80% {
+        margin-left: calc(-1300px * 4);
+    }
+
+    95% {
+        margin-left: calc(-1300px * 4);
+    }
+
+    100% {
+        margin-left: calc(-1300px * 0)
+    }
 }
