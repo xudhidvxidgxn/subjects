@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1403 김민재 1-1번숙제 (2회 재시도)</title>
+    <link rel="stylesheet" href="../style/style1.css">
+</head>
+
+<body>
+    <section id="bookmark-sidebar">
+        <!-- 사이드바 내용 작성 -->
+        <div
+            style="display: flex; gap: 10px; margin-bottom: 40px; align-items: center; text-decoration: none; color: inherit;">
+            <a href="../code/1-1번 숙제 (2회 재시도).html">
+                <div class="book"><img src="../images/bookmark-.png" alt="bookmark"></div>
+                <div class="logo">
+                    Bookmark Manager
+                </div> 
+                
+            </a>
+        </div>
+        <div class="bookmark-categorize">
+            <input type="radio" name="category" id="Home" checked hidden>
+            <label for="Home" class="category svg-inputed"><img src="../images/home.png" alt="home">Home</label>
+            <input type="radio" name="category" id="Archived" hidden>
+            <label for="Archived" class="category svg-inputed"><img src="../images/Archived.png"
+                    alt="Archived">Archived</label>
+        </div>
+        <p class="subtitle">TAGS</p>
+        <label>
+            <div class="TAG"><input type="checkbox">AI<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Community<div class="number-circle">5</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Compatibility<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">CSS<div class="number-circle">6</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Design<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Framework<div class="number-circle">2</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">GIT<div class="number-circle">1</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">HTML<div class="number-circle">2</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">JavaScript<div class="number-circle">3</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Layout<div class="number-circle">3</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Learning<div class="number-circle">6</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Performance<div class="number-circle">2</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Practice<div class="number-circle">5</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Reference<div class="number-circle">4</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Tips<div class="number-circle">4</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Tools<div class="number-circle">4</div>
+            </div>
+        </label>
+        <label>
+            <div class="TAG"><input type="checkbox">Tutorial<div class="number-circle">3</div>
+            </div>
+        </label>
+    </section>
+    <section id="bookmark-library">
+        <!-- 북마크 라이브러리 내용 작성 -->
+        <div class="bookmark-search-bar">
+            <!-- 검색 바 내용 작성 -->
+            <div style="display: flex; gap: 20px;">
+                <div class="menu">
+                    ☰
+                </div>
+                <div class="searchbar svg-inputed">
+                    <img src="../images/dodbogi.png" alt="돋보기" style="z-index: 10;">
+                    <input type="text" placeholder="Search by title...">
+                </div>
+            </div>
+            <div class="profile-And-Button">
+                <!-- 프로필 및 버튼 내용 작성 -->
+                <div class="addButton">+ Add Bookmark</div>
+                <div class="addButton1">+</div>
+                <div class="profile"><img src="../images/ow.gif" alt="ow"></div>
+            </div>
+        </div>
+        <div class="bookmark-display-area">
+            <!-- 북마크 리스트 내용 작성 -->
+            <div class="bookmark-menubar">
+                <!-- 북마크 메뉴바 내용 작성 -->
+                <p class="title">All Bookmarks</p>
+                <div class="sortbutton svg-inputed">Sort by</div>
+            </div>
+            <div id="bookmarks">
+                <!-- 북마크 아이템들 작성 -->
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">Frontend Mentor</p>
+                                    <p class="bookmark-subtitle">frontendmentor.io</p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">Improve your front-end coding skills by building real projects.
+                            Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag">Practice</div>
+                        <div class="bookmark-tag">Learning</div>
+                        <div class="bookmark-tag">Community</div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed">47</div>
+                            <div class="svg-inputed">23 Sep</div>
+                            <div class="svg-inputed">15 Jan</div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">MDN Web Docs</p>
+                                    <p class="bookmark-subtitle">developer.mozilla.org</p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+                            The MDN Web Docs site provides information about Open Web technologies including HTML, CSS,
+                            and APIs for both Web sites and progressive web apps
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag">Reference</div>
+                        <div class="bookmark-tag">HTML</div>
+                        <div class="bookmark-tag">CSS</div>
+                        <div class="bookmark-tag">JavaScript</div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed">152</div>
+                            <div class="svg-inputed">24 Sep</div>
+                            <div class="svg-inputed">10 Jan</div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">React Docs</p>
+                                    <p class="bookmark-subtitle">react.dev</p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+                            The library for web and native user interfaces. Build user interfaces out of individual
+                            pieces called components.
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag">JavaScript</div>
+                        <div class="bookmark-tag">Framework</div>
+                        <div class="bookmark-tag">Reference</div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed">0</div>
+                            <div class="svg-inputed">never</div>
+                            <div class="svg-inputed">20 Feb</div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">Claude</p>
+                                    <p class="bookmark-subtitle">claude.ai</p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+                            An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and
+                            creative tasks through natural conversation.
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag">Tools</div>
+                        <div class="bookmark-tag">AI</div>
+                        <div class="bookmark-tag">Learning</div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed">73</div>
+                            <div class="svg-inputed">23 Sep</div>
+                            <div class="svg-inputed">18 Feb</div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">Web.dev</p>
+                                    <p class="bookmark-subtitle">web.dev</p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+                            Guidance to build modern web experiences that work on any browser. Learn about web vitals,
+                            PWAs, and more.
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag">Performance</div>
+                        <div class="bookmark-tag">Learning</div>
+                        <div class="bookmark-tag">Tips</div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed">15</div>
+                            <div class="svg-inputed">16 Aug</div>
+                            <div class="svg-inputed">15 Feb</div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">Tailwind CSS</p>
+                                    <p class="bookmark-subtitle">tailwindcss.com</p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+                            A utility-first CSS framework for rapidly building modern websites without ever leaving your
+                            HTML
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag">CSS</div>
+                        <div class="bookmark-tag">Frmaework</div>
+                        <div class="bookmark-tag">Tools</div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed">52</div>
+                            <div class="svg-inputed">19 Sep</div>
+                            <div class="svg-inputed">12 Feb</div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">Dev.to</p>
+                                    <p class="bookmark-subtitle"></p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">JavaScript.info</p>
+                                    <p class="bookmark-subtitle"></p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+                <div class="bookmark">
+                    <!-- 개별 북마크 내용 작성 -->
+                    <div class="bookmark-header">
+                        <div class="bookmark-title-area">
+                            <div style="display: flex; gap: 15px;">
+                                <div class="bookmark-image"></div>
+                                <div>
+                                    <p class="bookmark-title">freeCodeCamp</p>
+                                    <p class="bookmark-subtitle"></p>
+                                </div>
+                            </div>
+                            <div class="option">...</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bookmark-main">
+                        <p class="bookmark-description">
+
+                        </p>
+                    </div>
+                    <div class="bookmark-tags">
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                        <div class="bookmark-tag"></div>
+                    </div>
+                    <hr style="transform: scale(1.2, 1);">
+                    <div class="bookmark-footer">
+                        <div class="bookmark-info">
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                            <div class="svg-inputed"></div>
+                        </div>
+                        <img src="../images/pin.jpg" alt="pin image" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
