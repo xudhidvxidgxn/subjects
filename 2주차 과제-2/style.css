@@ -11,7 +11,7 @@ a {
 
 .visual-container {
     width: 1280px;
-    height: 4000px;
+    /*height: 4000px;*/
     margin: 0 auto;
 }
 
@@ -168,13 +168,17 @@ input:checked~div {
 .slide-container {
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 700px;
+    flex-wrap: nowrap;
     gap: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
 }
 
 .slide-content {
-    flex: none;
-    width: 100%;
-    height: inherit;
+    display: flex;
+    flex-shrink: 0;
+    width: 1280px;
+    height: 700px;
+    border-radius: 15px;
+    background-color: #000;
 }
