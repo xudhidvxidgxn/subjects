@@ -28,9 +28,12 @@ a {
     background-color: #000;
 }
 
-ul[class$="nav"] {
+ul {
     display: flex;
     list-style-type: none;
+}
+
+ul[class$="nav"] {
     gap: 25px;
 }
 
@@ -228,6 +231,25 @@ input:checked~.toggle-display {
     }
 
     100% {
-        margin-left: calc(-1300px * 0)
+        margin-left: calc(-1300px * 0);
     }
+}
+
+.yeotbogi {
+    margin-top: 50px;
+}
+
+.yeotbogi-title {
+    font-size: 27px;
+    font-weight: 600;
+    padding: 40px 0;
+}
+
+.yeotbogi-nav {
+    padding: 8px 12px;
+    border-radius: 3em;
+    border: 1px solid #e2e2e2;
+}
+.yeotbogi-nav.selected {
+    
 }
