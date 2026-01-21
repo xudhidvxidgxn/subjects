@@ -15,7 +15,7 @@
     justify-content: space-between;
     width: 1300px;
     margin: 0 auto;
-    color: #fff;
+    color: #c2c2c2;
 }
 
 .nav-bar-area {
@@ -30,10 +30,11 @@
 
 .left-nav>.nav,
 .right-nav>.nav {
-    padding: 12px;
+    padding: 1.1em;
     font-size: 0.7em;
 }
 
-.left-nav>.nav:first-of-type {
+.left-nav>.nav:first-of-type,
+.right-nav>.nav:first-of-type {
     margin-left: -10px;
 }
