@@ -280,14 +280,17 @@ ul:has(input[id="y1"]:checked)~#yeot1 {
     font-size: 14px;
     margin-top: 20px;
 }
+
 .content-name {
     margin-top: 10px;
     font-size: 14px;
 }
+
 .content-event {
     margin-top: 5px;
     font-weight: 600;
     font-size: 20px;
+    color: #2e36a7;
 }
 
 .content-tags {
@@ -304,11 +307,16 @@ ul:has(input[id="y1"]:checked)~#yeot1 {
 }
 
 .best {
-    color: #2a63ff;
-    background-color: #dbfbff;
+    color: rgb(50, 50, 255);
+    background-color: rgb(50, 200, 255, 0.3);
 }
 
 .free {
     color: #38b142;
     background-color: #ddffe0;
+}
+
+.sales {
+    color: rgb(255, 50, 50);
+    background-color: rgb(255, 200, 200);
 }
