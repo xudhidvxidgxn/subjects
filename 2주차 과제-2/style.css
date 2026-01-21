@@ -22,8 +22,7 @@
     background-color: #000;
 }
 
-.left-nav,
-.right-nav {
+ul {
     display: flex;
     list-style-type: none;
 }
