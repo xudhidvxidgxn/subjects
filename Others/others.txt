@@ -12,13 +12,13 @@ git commit -m "커밋 메시지"
 git push -u origin main
 
 # 1단계: .git 폴더 삭제
-Remove-Item -Path "1주차 과제-1\.git" -Recurse -Force
+Remove-Item -Path "(submodule된 폴더)\.git" -Recurse -Force
 
 # 2단계: git 캐시 새로고침
-git rm --cached -r "1주차 과제-1"
+git rm --cached -r "(submodule된 폴더)"
 
 # 3단계: 다시 추가
-git add "1주차 과제-1"
+git add "(submodule된 폴더)"
 
 # 4단계: 커밋
 git commit -m "Fix: 폴더 submodule 복구"
