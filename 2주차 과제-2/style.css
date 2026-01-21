@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.visual-container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.nav-bar-area {
+    background-color: #000;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.left-nav>.nav,
+.right-nav>.nav {
+    padding: 12px;
+    font-size: 0.7em;
+}
+
+.left-nav>.nav:first-of-type {
+    margin-left: -10px;
+}

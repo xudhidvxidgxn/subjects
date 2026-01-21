@@ -36,4 +36,6 @@ left: 500px; = l500
 right: 500px; = r:500
 bottom: 500px; = b500
 top: 500px; = t500
+list-style-type: none; = lstn
+lst = list-style-type: disc;
 */
