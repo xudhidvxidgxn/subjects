@@ -174,6 +174,8 @@ input:checked~.toggle-display {
     align-items: center;
     flex-wrap: nowrap;
     width: 1280px;
+    /*margin-left: calc((100vw - 1280px) / 2);*/
+    margin-left: 1280px;
     margin-top: 20px;
     border-radius: 15px;
     gap: 20px;
@@ -237,7 +239,7 @@ input:checked~.toggle-display {
 }
 
 .yeotbogi {
-    margin-top: 50px;
+    margin-top: calc(50px);
 }
 
 .yeotbogi-title {
