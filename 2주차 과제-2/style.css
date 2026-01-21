@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .visual-container {
-    width: 1300px;
+    width: 1280px;
+    height: 4000px;
     margin: 0 auto;
 }
 
@@ -13,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1300px;
+    width: 1280px;
     margin: 0 auto;
     color: #c2c2c2;
 }
@@ -25,15 +31,53 @@
 ul {
     display: flex;
     list-style-type: none;
+    gap: 25px;
 }
 
 .left-nav>.nav,
 .right-nav>.nav {
-    padding: 1.1em;
+    padding: 1.1em 0;
     font-size: 0.7em;
 }
 
 .left-nav>.nav:first-of-type,
 .right-nav>.nav:first-of-type {
     margin-left: -10px;
+}
+
+.search-area {
+    margin-top: 22px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-area>img {
+    width: 8em;
+    border: 1px solid #e2e2e2;
+}
+
+.shortcuts {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.shortcuts>a {
+    font-size: 34px;
+}
+
+/* 이것은 임시입니다 */
+.shortcuts>a:nth-of-type(1)::before {
+    content: "1";
+}
+
+.shortcuts>a:nth-of-type(2)::before {
+    content: "2";
+}
+
+.shortcuts>a:nth-of-type(3)::before {
+    content: "3";
 }
