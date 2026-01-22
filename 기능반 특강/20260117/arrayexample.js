@@ -6,7 +6,7 @@ console.log(a1.concat(a2))
 console.log(a1, a2);
 
 //every : 모두
-//some
+//some : 최소
 const a3 = [1, 2, 3, 4, 5];
 
 //const r1 = a3.every((value) => {
