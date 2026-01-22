@@ -490,7 +490,8 @@ ul:has(input[id="y4"]:checked)~.yeot4 {
     font-weight: 800;
     font-size: 27px;
 }
+
 .recommend-subscription {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 13px;
 }
