@@ -543,6 +543,9 @@ ul:has(input[id="y4"]:checked)~.yeot4 {
 
 .sales-contents-area {
     margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sales-contents {
@@ -552,4 +555,55 @@ ul:has(input[id="y4"]:checked)~.yeot4 {
     grid-auto-rows: 470px;
     gap: 28px;
     margin-top: 40px;
+}
+
+.view-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 85px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+}
+
+.gonggeesahang {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 90px;
+}
+
+.gonggee-head {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gonggee {
+    font-weight: 600;
+}
+
+.gonggee-plus {
+    font-size: 40px;
+}
+
+footer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer>img {
+    width: 160px;
+    height: 60px;
+}
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    
 }
