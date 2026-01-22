@@ -14,9 +14,13 @@ console.log(concatArray(array1, array2)); // ['A', 'B', 'C', 'D', 'E', 'F'] 출�
 function insertElement(arr, index, value) {
     // 코드 작성
     if (index >= arr.length) {
-        console.error(`현재 배열의 길이는 ${arr.length}로 ${index}은 입력 불가능합니다.`)
+        return console.error(`현재 배열의 길이는 ${arr.length}로 ${index}은 입력 불가능합니다.`);
     }
-    
+    const res = arr.slice(0, index);
+    res.push(value);
+    const res1 = arr.slice(index, arr.length)
+
+    return res.concat(res1);
 }
 
 const nums = [1, 2, 3, 4, 5];
