@@ -320,7 +320,7 @@ ul:has(input[id="y4"]:checked)~.yeot4 {
 
 .content-name {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .content-event {
@@ -567,7 +567,7 @@ ul:has(input[id="y4"]:checked)~.yeot4 {
     font-size: 14px;
 }
 
-.gonggeesahang {
+.notice-area {
     display: flex;
     align-items: center;
     position: relative;
@@ -576,17 +576,17 @@ ul:has(input[id="y4"]:checked)~.yeot4 {
     margin-top: 90px;
 }
 
-.gonggee-head {
+.notice-head {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.gonggee {
+.notice {
     font-weight: 600;
 }
 
-.gonggee-plus {
+.notice-plus {
     font-size: 40px;
 }
 
@@ -602,8 +602,43 @@ footer>img {
     width: 160px;
     height: 60px;
 }
-.footer-header {
+
+.footer-header,
+.footer-main {
     display: flex;
     justify-content: space-between;
-    
+    margin: 20px 0;
+}
+
+.footer-nav {
+    font-size: 14px;
+    gap: initial !important;
+}
+
+.footer-nav>li {
+    border-right: 1px solid #e2e2e2;
+    padding: 0 12px;
+}
+
+.footer-nav>.bold {
+    font-weight: 600;
+    color: #000;
+}
+
+.footer-main [class^="footer-main-"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-main [class^="footer-nav"]>li {
+    padding: 0 0.5em;
+}
+
+.footer-nav>li:first-of-type {
+    padding-left: 0;
+}
+
+.footer-nav>li:last-of-type {
+    border-right: none;
 }
