@@ -408,3 +408,12 @@ ul:has(input[id="y4"]:checked)~#yeot4 {
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.2);
 }
+@keyframes Slide2 {
+    0% {margin-left: 0;}
+}
+/* img는 좀 더 손볼 필요 */
+.new-content>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid #000;
+}
