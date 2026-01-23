@@ -1,6 +1,6 @@
 function mergeObjects(obj1, obj2) {
   // 코드 작성
-  return { ...obj1, ...obj2 }; // 이건 임시입니다
+  return { ...obj1, ...obj2 }; // 이건 임시입니다;
 }
 
 let object1 = { a: "A", b: "B", c: "C" };
