@@ -1,19 +1,20 @@
 function concatArray(arr1, arr2) {
   // 코드 작성
-  const res = [];
-  arr1.forEach((value) => {
-    res.push(value);
-  });
-  arr2.forEach((value) => {
-    res.push(value);
-  });
-  return res;
+  //const res = [];
+  ////arr1.forEach((value) => {
+  ////  res.push(value);
+  ////});
+  ////arr2.forEach((value) => {
+  ////  res.push(value);
+  ////});
+  //res.push(...arr1);
+  //res.push(...arr2);
+  //return res;
+  return [...arr1, ...arr2];
 }
 
 const array1 = ["A", "B", "C"];
 const array2 = ["D", "E", "F"];
-console.log(...array1);
-console.log(...array2);
 
 console.log(concatArray(array1, array2)); // ['A', 'B', 'C', 'D', 'E', 'F'] 출력
 
@@ -37,13 +38,14 @@ console.log(insertElement(nums, 10, 6)); // console.error("현재 배열의 길�
 
 function removeElement(arr, index) {
   // 코드 작성
-  const res = [];
-  arr.forEach((value, idx) => {
-    if (idx !== index) {
-      res.push(value);
-    }
-  });
-  return res;
+  //const res = [];
+  //arr.forEach((value, idx) => {
+  //  if (idx !== index) {
+  //    res.push(value);
+  //  }
+  //});
+  //return res;
+  return arr.filter((_, idx) => idx !== index);
 }
 
 let chars = ["A", "B", "C", "D", "E"];
