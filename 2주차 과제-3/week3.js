@@ -17,4 +17,26 @@ let str = "apple";
 
 console.log(countLetters(str)); // {a: 1, p: 2, l: 1, e: 1} 출력
 
+function getObjectKeysAndValues(object) {
+  // 코드 작성
+  return [[...Object.keys(object)], [...Object.values(object)]];
+}
+
+let obj = { a: "A", b: "B", c: "C" };
+
+console.log(getObjectKeysAndValues(obj)); // [['a', 'b', 'c'], ['A', 'B', 'C']] 출력
+
+function removeKeyFromObject(object, keys) {
+  // 코드 작성
+  return Object.fromEntries(
+    Object.keys(object)
+      .filter((value) => !keys.includes(value))
+      .map((key) => [key, object[key]]),
+  );
+}
+
+obj = { a: "hi", b: "there", c: "world" };
+
+console.log(removeKeyFromObject(obj, ["b", "c"])); // {a: "hi"} 출력
+
 console.log(Object.prototype);
