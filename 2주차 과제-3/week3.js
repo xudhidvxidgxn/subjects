@@ -39,4 +39,18 @@ obj = { a: "hi", b: "there", c: "world" };
 
 console.log(removeKeyFromObject(obj, ["b", "c"])); // {a: "hi"} 출력
 
+function selectValuesByKey(objectArray, key) {
+  // 코드 작성
+  //  return objectArray.filter((value) => Object.keys(value) === key).map((key) => [key, value[key]]);
+}
+
+const objectArray = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Cathy" },
+];
+
+console.log(selectValuesByKey(objectArray, "name"));
+// ["Alice", "Bob", "Cathy"] 출력
+
 console.log(Object.prototype);
