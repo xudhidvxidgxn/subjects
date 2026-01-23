@@ -142,14 +142,37 @@ const defaultFilterOptions = {
   maxPages: Infinity,
   minPrice: 0,
   maxPrice: Infinity,
-  category: "novel", // 선택 사항
+  category: undefined, // 선택 사항
 };
 
 function searchBooks(books, options = defaultFilterOptions) {
   // 코드 작성
-  const cates = options.category ? new Set(Array.isArray(options.category) ? options.category : [options.category]) : new Set(Object.values(books).map((b) => b.category));
-
-  return Object.values(books).filter((book) => cates.has(book.category) && book.pages >= options.minPages && book.pages <= options.maxPages && book.price >= options.minPrice && book.price <= options.maxPrice);
+  const cates = options.category ? new Set(Array.isArray(options.category) ? options.category : [options.category]) : new Set(Object.values(books).map((book) => book.category));
+  const filteredBooks = Object.values(books).filter((book) => cates.has(book.category) && book.pages >= options.minPages && book.pages <= options.maxPages && book.price >= options.minPrice && book.price <= options.maxPrice);
+  let res = [];
+  for (const cate of cates) {
+    res.push([
+      cate,
+      Object.fromEntries([
+        ["titles", [filteredBooks.filter((book) => book.category === cate).map((b) => b.title)]],
+        [
+          "totalPages",
+          filteredBooks
+            .filter((book) => book.category === cate)
+            .map((b) => b.pages)
+            .reduce((acc, cur) => acc + cur),
+        ],
+        [
+          "totalPrices",
+          filteredBooks
+            .filter((book) => book.category === cate)
+            .map((b) => b.price)
+            .reduce((acc, cur) => acc + cur),
+        ],
+      ]),
+    ]);
+  }
+  return Object.fromEntries(res);
 }
 
 books = [
@@ -166,8 +189,16 @@ books = [
 console.log(searchBooks(books));
 /* 
 {
-  novel: { titles: ["The Hobbit", "Harry Potter", "Crime and Punishment", "To Kill a Mockingbird"], totalPages: 1560, totalPrices: 83 },
-  programming: { titles: ["JavaScript for Beginners", "Python Crash Course", "Eloquent JavaScript", "JavaScript: The Good Parts"], totalPages: 900, totalPrices: 63 }
+  novel: {
+    titles: ["The Hobbit", "Harry Potter", "Crime and Punishment", "To Kill a Mockingbird"], 
+    totalPages: 1560, 
+    totalPrices: 83
+  },
+  programming: { 
+  titles: ["JavaScript for Beginners", "Python Crash Course", "Eloquent JavaScript", "JavaScript: The Good Parts"], 
+  totalPages: 900, 
+  totalPrices: 63 
+  }
 }
 출력
 */

@@ -2,7 +2,7 @@
 순회 가능한 자료형 : 
     1. Array - [1, 2, 3] : 배열
     2. String - "Hello" : 문자열
-    3. Set - new Set(1, 2, 2) : 중복없는 집합
+    3. Set - new Set([1, 2, 2]) : 중복없는 집합
     4. Map - new Map([['a':1]]) : 키-값 맵
     5. TypedArray - new UnitBArray([1, 2, 3]) - 바이너리 배열
     6. NodeList - document.querySelectorAll('div') - DOM 노드 컬렉션
