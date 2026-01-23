@@ -85,4 +85,100 @@ students = [
 
 console.log(filterByAverageScore(students, 80)); // ["Alice", "David"] 출력
 
+function getBooksByCategory(books, category) {
+  // 코드 작성
+  return Object.values(books)
+    .filter((value) => value["category"] === category)
+    .map((key) => key["title"]);
+}
+
+let books = [
+  { title: "The Hobbit", category: "novel" },
+  { title: "Harry Potter", category: "novel" },
+  { title: "JavaScript for Beginners", category: "programming" },
+  { title: "Python Crash Course", category: "programming" },
+];
+
+console.log(getBooksByCategory(books, "programming"));
+// ["JavaScript for Beginners", "Python Crash Course"] 출력
+
+function getBooksStatsByCategory(books, category) {
+  // 코드 작성
+  return Object.fromEntries([
+    [
+      "titles",
+      Object.values(books)
+        .filter((value) => value["category"] === category)
+        .map((key) => key["title"]),
+    ],
+    [
+      "avgPages",
+      (
+        Object.values(books)
+          .filter((value) => value["category"] === category)
+          .map((key) => key["pages"])
+          .reduce((acc, cur) => acc + cur) / Object.values(books).filter((value) => value["category"] === category).length
+      ).toFixed(3),
+    ],
+  ]);
+}
+
+books = [
+  { title: "The Hobbit", category: "novel", pages: 310 },
+  { title: "Harry Potter", category: "novel", pages: 450 },
+  { title: "JavaScript for Beginners", category: "programming", pages: 200 },
+  { title: "Python Crash Course", category: "programming", pages: 250 },
+  { title: "Eloquent JavaScript", category: "programming", pages: 280 },
+  { title: "Crime and Punishment", category: "novel", pages: 480 },
+];
+
+console.log(getBooksStatsByCategory(books, "programming"));
+// { titles: ["JavaScript for Beginners", "Python Crash Course", "Eloquent JavaScript"], avgPages: 243.333 } 출력
+console.log(getBooksStatsByCategory(books, "novel"));
+// { titles: ["The Hobbit", "Harry Potter", "Crime and Punishment"], avgPages: 413.333 } 출력
+
+const defaultFilterOptions = {
+  minPages: 0,
+  maxPages: Infinity,
+  minPrice: 0,
+  maxPrice: Infinity,
+  category: "novel", // 선택 사항
+};
+
+function searchBooks(books, options = defaultFilterOptions) {
+  // 코드 작성
+  const cates = options.category ? new Set(Array.isArray(options.category) ? options.category : [options.category]) : new Set(Object.values(books).map((b) => b.category));
+
+  return Object.values(books).filter((book) => cates.has(book.category) && book.pages >= options.minPages && book.pages <= options.maxPages && book.price >= options.minPrice && book.price <= options.maxPrice);
+}
+
+books = [
+  { title: "The Hobbit", category: "novel", pages: 310, price: 13 },
+  { title: "Harry Potter", category: "novel", pages: 450, price: 28 },
+  { title: "JavaScript for Beginners", category: "programming", pages: 200, price: 15 },
+  { title: "Python Crash Course", category: "programming", pages: 250, price: 18 },
+  { title: "Eloquent JavaScript", category: "programming", pages: 280, price: 20 },
+  { title: "Crime and Punishment", category: "novel", pages: 480, price: 27 },
+  { title: "JavaScript: The Good Parts", category: "programming", pages: 170, price: 10 },
+  { title: "To Kill a Mockingbird", category: "novel", pages: 320, price: 15 },
+];
+
+console.log(searchBooks(books));
+/* 
+{
+  novel: { titles: ["The Hobbit", "Harry Potter", "Crime and Punishment", "To Kill a Mockingbird"], totalPages: 1560, totalPrices: 83 },
+  programming: { titles: ["JavaScript for Beginners", "Python Crash Course", "Eloquent JavaScript", "JavaScript: The Good Parts"], totalPages: 900, totalPrices: 63 }
+}
+출력
+*/
+
+console.log(searchBooks(books, { minPages: 200, maxPages: 370, minPrice: 15, maxPrice: 20 }));
+/*
+{
+  novel: { titles: ["The Hobbit", "To Kill a Mockingbird"], totalPages: 630, totalPrices: 28 },
+  programming: { titles: ["JavaScript for Beginners", "Python Crash Course", "Eloquent JavaScript"], totalPages: 730, totalPrices: 53 }
+}
+출력
+*/
+
 console.log(Object.prototype);
