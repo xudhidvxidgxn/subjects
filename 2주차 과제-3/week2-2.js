@@ -12,6 +12,8 @@ function concatArray(arr1, arr2) {
 
 const array1 = ["A", "B", "C"];
 const array2 = ["D", "E", "F"];
+console.log(...array1);
+console.log(...array2);
 
 console.log(concatArray(array1, array2)); // ['A', 'B', 'C', 'D', 'E', 'F'] 출력
 
