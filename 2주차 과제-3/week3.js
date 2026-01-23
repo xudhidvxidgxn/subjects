@@ -41,7 +41,7 @@ console.log(removeKeyFromObject(obj, ["b", "c"])); // {a: "hi"} 출력
 
 function selectValuesByKey(objectArray, key) {
   // 코드 작성
-  //  return objectArray.filter((value) => Object.keys(value) === key).map((key) => [key, value[key]]);
+  return Object.values(objectArray).map((value) => value[key]);
 }
 
 const objectArray = [
@@ -52,5 +52,21 @@ const objectArray = [
 
 console.log(selectValuesByKey(objectArray, "name"));
 // ["Alice", "Bob", "Cathy"] 출력
+
+function filterByScore(students, score) {
+  // 코드 작성
+  return Object.values(students)
+    .filter((value) => value["score"] >= score)
+    .map((key) => key["name"]);
+}
+
+let students = [
+  { name: "Alice", score: 85 },
+  { name: "Bob", score: 75 },
+  { name: "Cathy", score: 90 },
+  { name: "David", score: 65 },
+];
+
+console.log(filterByScore(students, 80)); // ["Alice", "Cathy"] 출력
 
 console.log(Object.prototype);
