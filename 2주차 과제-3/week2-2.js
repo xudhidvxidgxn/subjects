@@ -39,3 +39,5 @@ function removeElement(arr, index) {
 const chars = ['A', 'B', 'C', 'D', 'E'];
 
 console.log(removeElement(chars, 3)); // ['A', 'B', 'C', 'E'] 출력
+
+console.log(Array.prototype);
