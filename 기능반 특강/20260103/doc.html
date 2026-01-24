@@ -1,49 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .box {
-            width: 250px;
-            height: 100px;
-            padding: 20px;
-            margin: 30px;
-            /* box-sizing: border-box; */
-            background-color: black;
-        }
-        
-        .box:nth-child(1) {
-            background-color: red;
-        }
-        
-        .box:nth-child(2) {
-            background-color: blue;
-        }
-        
-        .box:nth-child(3) {
-            background-color: orange;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .box {
+                width: 250px;
+                height: 100px;
+                padding: 20px;
+                margin: 30px;
+                /* box-sizing: border-box; */
+                background-color: black;
+            }
 
-        .card-list {
-            display: flex;
-            flex-direction: column;
-        }
+            .box:nth-child(1) {
+                background-color: red;
+            }
 
-    </style>    
-</head>
-<body>
-    
-    <div class="card-list">
-        
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+            .box:nth-child(2) {
+                background-color: blue;
+            }
 
-    </div>
+            .box:nth-child(3) {
+                background-color: orange;
+            }
 
-</body>
+            .card-list {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card-list">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
 </html>

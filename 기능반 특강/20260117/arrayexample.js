@@ -2,7 +2,7 @@
 const a1 = [1, 2, 3];
 const a2 = [4, 5, 6];
 
-console.log(a1.concat(a2))
+console.log(a1.concat(a2));
 console.log(a1, a2);
 
 //every : 모두
@@ -20,11 +20,11 @@ const a3 = [1, 2, 3, 4, 5];
 //})
 
 // 배열에 있는 값들이 전부 3보다 작니?
-const r1 = a3.every((value) => value < 3)
+const r1 = a3.every((value) => value < 3);
 console.log(r1);
 
 // 배열에 있는 값들이 하나라도 3보다 작니?
-const r2 = a3.some((value => value < 3));
+const r2 = a3.some((value) => value < 3);
 console.log(r2);
 
 // push: 추가 (뒤에)
@@ -40,7 +40,7 @@ console.log(a4);
 
 a4.pop();
 
-console.log(a4)
+console.log(a4);
 
 //filter: 조건에 충족한 값만 필터하겠다.
 //forEach: 그냥 for문 (반환 값 X)
@@ -53,7 +53,7 @@ console.log(r5);
 
 const r6 = a5.forEach((value) => {
     console.log(value);
-})
+});
 
 const a6 = a5.map((value) => value * 2);
 
@@ -105,18 +105,19 @@ console.log(a12);
 const a13 = [1, 2, 3, 4, 5];
 
 const r13 = a13.reduce((acc, cur) => {
-    console.log(`acc: ${acc}, cur: ${cur}`)
+    console.log(`acc: ${acc}, cur: ${cur}`);
     return acc + cur;
 }, 0);
 
-console.log(r13)
-
+console.log(r13);
 
 function getMaxNumber(arr) {
     let max = arr[0];
     for (let index = 0; index < arr.length; index++) {
         const element = arr[index];
-        if (max < element) { max = element; }
+        if (max < element) {
+            max = element;
+        }
     }
     return max;
 }
@@ -134,7 +135,7 @@ function countOccurrences(arr, element) {
 console.log(countOccurrences([1, 2, 3, 2, 4, 2, 5], 2));
 
 function toUpperCaseArray(arr) {
-    return arr.map((value) => value.toUpperCase())
+    return arr.map((value) => value.toUpperCase());
 }
 console.log(toUpperCaseArray(["apple", "banana", "cherry"]));
 
@@ -148,8 +149,12 @@ function commonElements(arr1, arr2) {
     let res = [];
     for (let index = 0; index < arr1.length; index++) {
         for (let i = 0; i < arr2.length; i++) {
-            if (res.includes(arr1[index])) { continue; }
-            if (arr1[index] === arr2[i]) { res.push(arr1[index]); }
+            if (res.includes(arr1[index])) {
+                continue;
+            }
+            if (arr1[index] === arr2[i]) {
+                res.push(arr1[index]);
+            }
         }
     }
     return res;

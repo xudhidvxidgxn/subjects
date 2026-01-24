@@ -16,7 +16,6 @@ let b = 10; */
 
 /* var로 선언한 변수들은 window에 등록된다. 즉 오염 시킨다. (전역 오염) */
 
-
 // alert("테스트")
 // var alert = 10;
 
@@ -39,8 +38,7 @@ var = 10;
 
 */
 
-
-// var: 
+// var:
 //    - 변수가 최상단으로 끌어올려진다 (호이스팅)
 //    - 변수 선언 전에 호출할 수 있다.
 //    - 이 때 호출된 변수는 undefined다. (값이 할당되지 않고 선언만 된 상태)
@@ -55,7 +53,7 @@ var = 10;
 // let: const도 마찬가지
 //    - 변수가 최상단으로 끌어올려진다 (호이스팅)
 //    - 변수에 선언 전에 접근이 불가능한 상태.
-//    - 변수가 중복 선언되기 불가 
+//    - 변수가 중복 선언되기 불가
 
 //    let a = 10;
 //        - let a가 선언 된다.
@@ -128,8 +126,11 @@ function add(a, b) {
 }
 
 function isEven(num) {
-    if (num % 2 == 0) { return true; }
-    else { return false; }
+    if (num % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 //console.log(hello());
@@ -183,34 +184,34 @@ function isEven(num) {
 // number
 //toFixed : 소수점 절삭
 const num1 = 3.141592;
-console.log(num1.toFixed())
+console.log(num1.toFixed());
 
 //string
 //length : 길이를 알아내는 애
 const a = "하나둘";
-console.log(a.length)
+console.log(a.length);
 
 //includes : 포합하고 있는지 확인하는 애 (boolean: true, false)
 const a2 = "양영디지털고등학교";
-console.log(a2.includes("양"))
+console.log(a2.includes("양"));
 
 //indexOf : 해당하는 문자가 몇 번째에 있는지 알아내는 애, 없으면 -1
 const a3 = "양영디지털고등학교";
-console.log(a3.indexOf("양영"))
-console.log(a3.indexOf("디지털"))
-console.log(a3.indexOf("양ㅁ"))
+console.log(a3.indexOf("양영"));
+console.log(a3.indexOf("디지털"));
+console.log(a3.indexOf("양ㅁ"));
 
 //repeat : 문자를 반복시킨다. (거의 쓸 일 없음)
 const a4 = "양";
-console.log(a4.repeat(3))
+console.log(a4.repeat(3));
 
 //replace : 문자를 바꾸다
 const a5 = "양영디지털양영고등학교";
-console.log(a5.replace("양영", ""))
+console.log(a5.replace("양영", ""));
 
 //repalceAll : 모든 문자를 바꾸다
 const a6 = "양영디지털양영고등학교양영디지털양영고등학교양영디지털양영고등학교양영디지털양영고등학교양영디지털양영고등학교";
-console.log(a6.replaceAll("양영", ""))
+console.log(a6.replaceAll("양영", ""));
 
 //split : 문자를 기준으로 나눠서 배열로 만든다.
 const a7 = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10";
@@ -220,19 +221,17 @@ console.log(a7.split(","));
 //substring도 마찬가지
 //end번째 글자까지 뽑는다 봐도 됨
 const a8 = "1,2,3,4,5,6,7";
-console.log(a8.slice(0, -1))
-console.log(a8.substring(0, -1))
+console.log(a8.slice(0, -1));
+console.log(a8.substring(0, -1));
 
 //toUpperCase : 대문자로, toLowerCase: 소문자로
 const a9 = "Test";
-console.log(a9.toUpperCase())
-console.log(a9.toLowerCase())
+console.log(a9.toUpperCase());
+console.log(a9.toLowerCase());
 
 //trim : 공백 없애기
 const a10 = " te st ";
-console.log(a10.trim())
-console.log(a10.replaceAll(" ", ""))
+console.log(a10.trim());
+console.log(a10.replaceAll(" ", ""));
 
-
-
-console.log(String.prototype)
+console.log(String.prototype);

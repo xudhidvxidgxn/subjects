@@ -7,22 +7,22 @@ EVENT:
     - 
 */
 document.querySelector(".btn1").addEventListener("click", (ev) => {
-  // 너 부모가 first니?
-  // first 안에 들어가있니?
-  if (ev.target.closest(".first")) {
-    document.body.appendChild(ev.target);
-    document.querySelector(".first").removeChild(ev.target);
-  } else {
-    document.querySelector(".first").appendChild(ev.target);
-  }
+    // 너 부모가 first니?
+    // first 안에 들어가있니?
+    if (ev.target.closest(".first")) {
+        document.body.appendChild(ev.target);
+        document.querySelector(".first").removeChild(ev.target);
+    } else {
+        document.querySelector(".first").appendChild(ev.target);
+    }
 
-  document.querySelector(".first").append(ev.target);
-  console.log(ev.target);
-  console.log("버튼 클릭");
+    document.querySelector(".first").append(ev.target);
+    console.log(ev.target);
+    console.log("버튼 클릭");
 });
 
 document.querySelector(".btn2").addEventListener("dblclick", () => {
-  console.log("버튼 더블클릭");
+    console.log("버튼 더블클릭");
 });
 
 /* 이벤트를 추가하는 방법

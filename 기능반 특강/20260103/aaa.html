@@ -1,90 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        header {
-            height: 100px;
-            background-color: red;
-            color: white;
-            text-align: center;
-            line-height: 100px;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            header {
+                height: 100px;
+                background-color: red;
+                color: white;
+                text-align: center;
+                line-height: 100px;
+            }
 
-        nav {
-            height: 100px;
-            background-color: blue;
-            color: white;
-            text-align: center;
-            line-height: 100px;
-        }
+            nav {
+                height: 100px;
+                background-color: blue;
+                color: white;
+                text-align: center;
+                line-height: 100px;
+            }
 
-        section {
-            width: 50%;
-            height : 200px;
-            float: left;
-        }
-        
-        article {
-            height: 100px;
-            background-color: orange;
-        }
+            section {
+                width: 50%;
+                height: 200px;
+                float: left;
+            }
 
-        aside {
-            width: 50%;
-            height: 200px;
-            background-color: pink;
-            float: left;
-        }
+            article {
+                height: 100px;
+                background-color: orange;
+            }
 
-        footer {
-            width: 100%;
-            height: 100px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            line-height: 100px;
-        }
+            aside {
+                width: 50%;
+                height: 200px;
+                background-color: pink;
+                float: left;
+            }
 
-        .clear {
-            clear: both;
-        }        
-    </style>
-</head>
-<body>
-    <!-- 시맨틱 태그 (구글 크롤링 봇이 정보를 색인하기 쉽도록)-->
-    <header>
-        &lt;header&gt;
-    </header>
+            footer {
+                width: 100%;
+                height: 100px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                line-height: 100px;
+            }
 
-    <nav>
-        &lt;nav&gt;
-    </nav>
+            .clear {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 시맨틱 태그 (구글 크롤링 봇이 정보를 색인하기 쉽도록)-->
+        <header>&lt;header&gt;</header>
 
-    <main>
-        <section>
-            <article>
-                &lt;section&gt;
-            </article>
+        <nav>&lt;nav&gt;</nav>
 
-            <article>
-                &lt;article&gt;
-            </article>
-        </section>
+        <main>
+            <section>
+                <article>&lt;section&gt;</article>
 
-        <aside>
-            &lt;aside&gt;
-        </aside>
+                <article>&lt;article&gt;</article>
+            </section>
 
-        <div class="clear"></div>
-        
-    </main>
+            <aside>&lt;aside&gt;</aside>
 
-    <footer>
-        &lt;footer&gt;
-    </footer>
+            <div class="clear"></div>
+        </main>
 
-</body>
+        <footer>&lt;footer&gt;</footer>
+    </body>
 </html>
