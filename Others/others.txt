@@ -6,7 +6,10 @@ Ctrl+` 눌렀을 때에 디렉토리 경로를 반드시 확인할 것(그 경�
 git init <-- 이게 포장
 git remote add origin (깃 리포지토리 링크)
 (git config --global user.name "your.name")
+git config --global user.name "김민재"
 (git config --global user.email "your.email")
+git config --global user.email "ys2510103@y-y.hs.kr"
+
 git add .
 git commit -m "커밋 메시지"
 git push -u origin main
