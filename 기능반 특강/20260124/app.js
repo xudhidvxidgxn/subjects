@@ -7,7 +7,7 @@ css: 이쁘게 보일려고
 js: 
     -> 근육
     
-js 파일은 맨 하단에
+js 연결은 맨 하단에
 */
 const button = document.querySelector(".btn");
 const buttonList = document.querySelectorAll(".btn");
@@ -19,10 +19,11 @@ console.log(buttonList);
 //왜 쓰는가 : 특정 시점에 스타일을 바꾸고 싶을 때;
 //button.style.width = "100px";
 //button.style.height = "50px";
-buttonList.forEach((button) => {
-  button.style.width = "100px";
-  button.style.height = "50px";
-});
+
+//buttonList.forEach((button) => {
+//  button.style.width = "100px";
+//  button.style.height = "50px";
+//});
 
 //요소의 계층 위치 변경
 const first = document.querySelector(".first");
@@ -36,6 +37,7 @@ const newButton = document.createElement("button");
 
 newButton.textContent = "aaa"; // 택스트 채우기
 newButton.classList.add("btn"); // 클래스 할당
+newButton.classList.remove("btn"); // 클래스 삭제
 
 first.appendChild(newButton);
 
