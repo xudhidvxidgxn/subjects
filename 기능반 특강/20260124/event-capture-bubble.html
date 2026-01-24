@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .parent {
+                padding: 40px;
+                background-color: red;
+            }
+            .child {
+                padding: 40px;
+                background-color: blue;
+            }
+            .grand-child {
+                padding: 40px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            parent
+            <div class="child">
+                child
+                <div class="grand-child">grand-child</div>
+            </div>
+        </div>
+        <a href="https://naver.com">naver.com</a>
+        <form action="">
+            <input type="text" />
+            <button>제출</button>
+        </form>
+        <script>
+            document.querySelector(".parent").addEventListener(
+                "click",
+                (ev) => {
+                    console.log("1", ev.target);
+                },
+                true,
+            );
+            document.querySelector(".child").addEventListener(
+                "click",
+                (ev) => {
+                    console.log("2", ev.target);
+                },
+                true,
+            );
+            document.querySelector(".grand-child").addEventListener(
+                "click",
+                (ev) => {
+                    console.log("3", ev.target);
+                },
+                true,
+            );
+
+            document.querySelector("a").addEventListener("click", (ev) => {
+                ev.preventDefault(); // 요소의 행위를 막습니다
+                /* pr event dafalut */
+
+                // 요소의 전파를 막는다.
+                ev.stopPropagation();
+                // 요소의 전파를 막는다. (동일 이벤트까지 전파도 막는다.)
+                ev.stopImmediatePropagation();
+
+                console.log(1);
+            });
+            document.querySelector("a").addEventListener("click", (ev) => {
+                ev.preventDefault(); // 요소의 행위를 막습니다
+                /* pr event dafalut */
+                console.log(2);
+            });
+
+            document.querySelector("form").addEventListener("submit", (ev) => {
+                ev.preventDefault(); // 요소의 행위를 막습니다
+                /* pr event dafalut */
+                console.log(ev);
+            });
+        </script>
+    </body>
+</html>
+<!-- 버블링 : 자식에서부터 부모로 -->
+<!-- 캡쳐링 : 부모에서부터 자식으로 -->

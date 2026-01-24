@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button class="btn">클릭</button>
+        <button class="add-event-btn">이벤트 추가</button>
+        <button class="remove-event-btn">이벤트 제거</button>
+
+        <script>
+            const onClick = () => {
+                console.log("버튼 클릭");
+            };
+            document.querySelector(".add-event-btn").addEventListener("click", () => {
+                document.querySelector(".btn").addEventListener("click", onClick);
+            });
+            document.querySelector(".remove-event-btn").addEventListener("click", () => {
+                document.querySelector(".btn").removeEventListener("click", onClick);
+            });
+        </script>
+    </body>
+</html>
