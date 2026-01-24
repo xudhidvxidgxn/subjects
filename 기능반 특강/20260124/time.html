@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 초 단위를 다루는 함수
+            // 동기 : 어떤 한 행위가 끝날 때까지 다음 작업을 못 한다.
+            // 비동기 : 중간에 다른 걸 할 수 있다.
+            console.log("AAA");
+
+            setTimeout(() => {
+                console.log("1초 뒤에");
+            }, 1000);
+
+            console.log("끝");
+
+            // 타이머가 실행한 현재 시간 정보 (startTime)
+            // setInterval, setTimeout
+            // 현재 시간 정보 초당 16번 (currentTime)
+            // 계산
+
+            const getTime = () => {
+                const d = new Date();
+
+                const year = d.getFullYear();
+                const month = d.getMonth() + 1;
+                const day = d.getDate();
+
+                const h = d.getHours();
+                const m = d.getMinutes();
+                const s = d.getSeconds();
+                const ms = d.getMilliseconds();
+
+                return `${h}:${m}:${s}`;
+            };
+        </script>
+    </body>
+</html>

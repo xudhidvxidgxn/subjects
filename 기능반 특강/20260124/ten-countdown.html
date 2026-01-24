@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="time-txt">10.000</div>
+        <button id="start">시작</button>
+        <button id="pause">종료</button>
+        <script>
+            const getTime = () => {
+                const d = new Date();
+
+                const year = d.getFullYear();
+                const month = d.getMonth() + 1;
+                const day = d.getDate();
+
+                const h = d.getHours();
+                const m = d.getMinutes();
+                const s = d.getSeconds();
+                const ms = d.getMilliseconds();
+
+                return `${h}:${m}:${s}`;
+            };
+            /* const time_display = document.querySelector(".time-txt");
+            console.log(time_display.textContent);
+            function setCount() {
+                time_display.textContent = 10;
+            }
+            function startCount() {
+                let count = time_display.textContent;
+                setInterval(() => {
+                    count--;
+                    time_display.textContent = count;
+                }, 1000);
+            }*/
+            class Countdown {
+                constructor() {
+                    this.startBtn = document.querySelector("#start");
+                    this.pauseBtn = document.querySelector("#pause");
+                    this.time = document.querySelector(".time-txt");
+
+                    this.duration = 10000;
+                    this.timerId = null;
+                }
+                initEvents() {
+                    this.startBtn.addEventListener("click", () => this.start());
+                    this.pauseBtn.addEventListener("click", () => this.pause());
+                }
+                render(ms) {
+                    this.time.textContent = (ms / 1000).toFixed(3);
+                }
+
+                reset() {}
+
+                start() {
+                    this.tick();
+                }
+
+                pause() {
+                    clearTimeout(this.timerId);
+
+                    this.timerId = null;
+                }
+
+                tick() {
+                    this.duration -= 10;
+
+                    if (this.duration <= 0) {
+                        this.render(0);
+                        this.timerId = null;
+                        return;
+                    }
+
+                    this.render(this.duration);
+                    this.timerId = setTimeout(() => this.tick(), 10);
+                }
+            }
+            const countdown = new Countdown();
+            countdown.initEvents();
+        </script>
+    </body>
+</html>
