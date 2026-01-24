@@ -7,3 +7,6 @@ css: 이쁘게 보일려고
 js: 
     -> 근육
 */
+const button = document.querySelector("button");
+
+console.log(button);
