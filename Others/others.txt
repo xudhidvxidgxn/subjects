@@ -2,6 +2,7 @@ git reset --hard origin/main
 git clean -fd
 asdf
 
+git remote remove origin
 Ctrl+` 눌렀을 때에 디렉토리 경로를 반드시 확인할 것(그 경로를 기준으로 그 안에 있는 것들을 포장한다는 비닐봉지 같은 느낌)
 git init <-- 이게 포장
 git remote add origin (깃 리포지토리 링크)
