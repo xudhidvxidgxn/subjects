@@ -46,4 +46,7 @@ has(인자) 함수 :
     1. Set 객체의 메소드이다.
     2. 반환값이 있는 함수이다. (True/False)
     3. Set이 인자 를 가지고 있는지를 반환합니다.
+
+element.closest("CSS_선택자_문자열");
+element.matches("CSS_선택자_문자열");
 */
