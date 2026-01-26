@@ -50,7 +50,8 @@ has(인자) 함수 :
 element.closest("CSS_선택자_문자열");
 element.matches("CSS_선택자_문자열");
 addEventListener(이벤트 타입, callback(발생 요소, 객체?))
-    contextmenu => 우클릭 메뉴
+    - click : 마우스 클릭
+    - contextmenu : 우클릭 메뉴
 
 classList : 요소의 클래스 다룸
     add(``) => 요소에 클래스를 추가함
