@@ -7,6 +7,9 @@ function displayRowData(e) {
     const elem = e.target;
     if (elem.matches("td")) {
         const row = elem.closest("tr");
-        display.textContent = elem.textContent; //.. 이게 맞나요?
+        const targets = row.children;
+        const targetArray = Array.from(targets).map((td) => td.textContent);
+        //display.textContent = elem.textContent; //.. 이게 맞나요?
+        display.textContent = targetArray.reduce((acc, cur) => `${acc} ${cur}`);
     }
 }
