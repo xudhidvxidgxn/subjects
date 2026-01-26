@@ -51,4 +51,9 @@ element.closest("CSS_선택자_문자열");
 element.matches("CSS_선택자_문자열");
 addEventListener(이벤트 타입, callback(발생 요소, 객체?))
     contextmenu => 우클릭 메뉴
+
+classList : 요소의 클래스 다룸
+    add(``) => 요소에 클래스를 추가함
+    remove(``) => 요소에서 클래스를 제거함
+    toggle(``) => 요소에서 클래스가 있으면 제거, 없으면 추가
 */
