@@ -49,4 +49,6 @@ has(인자) 함수 :
 
 element.closest("CSS_선택자_문자열");
 element.matches("CSS_선택자_문자열");
+addEventListener(이벤트 타입, callback(발생 요소, 객체?))
+    contextmenu => 우클릭 메뉴
 */
