@@ -87,6 +87,9 @@ function btnControl(ev) {
             <div class="lab">${render()}</div>
             `,
         );
+        Array.from(document.querySelectorAll(".lab-title"))
+            .toReversed()
+            .forEach((div) => labs.prepend(div));
         count = 0;
         //document.querySelector("HTML").scrollTop = document.querySelector("HTML").scrollHeight;
         //document.querySelector("HTML").scrollTo({
