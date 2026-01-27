@@ -21,7 +21,7 @@ function setBtnText() {
     render();
 }
 function render() {
-    display.textContent = `${Math.floor(timersec / 60) > 24 ? `${Math.floor(timersec / 60 / 60)}:` : ``}${String(Math.floor(timersec / 60) % 60).padStart(2, "0")}:${String(timersec % 60).padStart(2, "0")}`;
+    display.textContent = `${Math.floor(timersec / (3600 * 24)) >= 1 ? `${Math.floor(timersec / (3600 * 24))}:` : ``}${Math.floor(timersec / 3600) >= 1 ? `${String(Math.floor(timersec / 3600) % 24).padStart(2, "0")}:` : ``}${String(Math.floor(timersec / 60) % 60).padStart(2, "0")}:${String(timersec % 60).padStart(2, "0")}`;
 }
 
 function setupTimer(ev) {
