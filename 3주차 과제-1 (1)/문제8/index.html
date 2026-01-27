@@ -1,11 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3주차 과제-1 (1)</title>
-</head>
-<body>
-    <script src="main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3주차 과제-1 (1) 8</title>
+        <style>
+            #display {
+                font-size: 56px;
+            }
+            button {
+                width: 8em;
+                height: 3em;
+            }
+            body {
+                position: relative;
+            }
+            #labs {
+                display: grid;
+                position: absolute;
+                left: 250px;
+                top: 0;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                width: 400px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #labs > .lab-title {
+                font-size: 22px;
+            }
+            #labs > .lab {
+                font-size: 24px;
+            }
+            #timer-area {
+                position: fixed;
+                top: 0;
+                left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="timer-area">
+            <div id="display">00:00.00</div>
+            <div id="btn-list">
+                <button class="reset">재설정</button>
+                <button class="start">시작</button>
+            </div>
+        </div>
+        <div id="labs">
+            <div class="lab-title">랩</div>
+            <div class="lab-title">시간</div>
+            <div class="lab-title">총 시간</div>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>
