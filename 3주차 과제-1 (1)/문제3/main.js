@@ -1,5 +1,4 @@
 function isWeekend(date) {
-    console.log(date.getDay());
     if ([0, 6].includes(date.getDay())) {
         return true;
     } else {
