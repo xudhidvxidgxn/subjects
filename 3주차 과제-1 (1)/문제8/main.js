@@ -92,10 +92,10 @@ function btnControl(ev) {
             .forEach((div) => labs.prepend(div));
         count = 0;
         //document.querySelector("HTML").scrollTop = document.querySelector("HTML").scrollHeight;
-        //document.querySelector("HTML").scrollTo({
-        //    top: document.querySelector("HTML").scrollHeight,
-        //    behavior: "smooth",
-        //});
+        document.querySelector("HTML").scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     }
 }
 window.addEventListener("load", () => {
