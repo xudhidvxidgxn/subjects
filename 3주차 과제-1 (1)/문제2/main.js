@@ -6,7 +6,7 @@ function addDays(date, days) {
     // 변화
     if (month === 2) {
         daylim = 28;
-    } else if (month in [4, 6, 9, 11]) {
+    } else if ([4, 6, 9, 11].includes(month)) {
         daylim = 30;
     }
     if (day > daylim) {
