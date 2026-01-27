@@ -1,11 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3주차 과제-1 (1)</title>
-</head>
-<body>
-    <script src="main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3주차 과제-1 (1) 7</title>
+        <style>
+            input {
+                text-align: right;
+                margin-right: 10px;
+                padding: 5px;
+            }
+            #display {
+                font-size: 56px;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="분 입력" id="input" /><label for="input">분 타이머 시작</label>
+        <span id="btn-list"><button id="reset">재설정</button> <button class="start" id="start/pause">시작</button></span>
+        <div id="display"></div>
+
+        <script src="main.js"></script>
+    </body>
 </html>
