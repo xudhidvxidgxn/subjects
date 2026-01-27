@@ -88,7 +88,11 @@ function btnControl(ev) {
             `,
         );
         count = 0;
-        document.querySelector("HTML").scrollTop = document.querySelector("HTML").scrollHeight;
+        //document.querySelector("HTML").scrollTop = document.querySelector("HTML").scrollHeight;
+        document.querySelector("HTML").scrollTo({
+            top: document.querySelector("HTML").scrollHeight,
+            behavior: "smooth",
+        });
     }
 }
 window.addEventListener("load", () => {
