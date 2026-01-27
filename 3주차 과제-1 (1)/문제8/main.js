@@ -80,7 +80,7 @@ function btnControl(ev) {
 
         labCount++;
         labs.insertAdjacentHTML(
-            "beforeend",
+            "afterbegin",
             `<div class="lab">${labCount}</div>
             <div class="lab">${String(Math.floor((count / 1000 / 60) % 60)).padStart(2, "0")}:${String(Math.floor(count / 1000) % 60).padStart(2, "0")}.${String((count % 1000) / 10).padStart(2, "0")}
 </div>
@@ -89,10 +89,10 @@ function btnControl(ev) {
         );
         count = 0;
         //document.querySelector("HTML").scrollTop = document.querySelector("HTML").scrollHeight;
-        document.querySelector("HTML").scrollTo({
-            top: document.querySelector("HTML").scrollHeight,
-            behavior: "smooth",
-        });
+        //document.querySelector("HTML").scrollTo({
+        //    top: document.querySelector("HTML").scrollHeight,
+        //    behavior: "smooth",
+        //});
     }
 }
 window.addEventListener("load", () => {
