@@ -42,8 +42,8 @@ function mergeText1() {
 function mergeText2() {
     let txt = ``;
     return Promise.all([getText1(), getText2(), getText3()]).then((res) =>
-        res.reduce((acc, cur) => {
-            return acc + cur;
+        res.reduce((resTxt, chunkTxt) => {
+            return resTxt + chunkTxt;
         }),
     );
 }
@@ -51,12 +51,12 @@ function mergeText2() {
 async function mergeText3() {
     let txt = ``;
     return await Promise.all([getText1(), getText2(), getText3()]).then((res) =>
-        res.reduce((acc, cur) => {
-            return acc + cur;
+        res.reduce((resTxt, chunkTxt) => {
+            return resTxt + chunkTxt;
         }),
     );
 }
 
-mergeText1().then((res) => console.log(res));
-mergeText2().then((res) => console.log(res));
-mergeText2().then((res) => console.log(res));
+mergeText1().then((res) => console.log(`mergeText1 :`, res));
+mergeText2().then((res) => console.log(`mergeText2 :`, res));
+mergeText2().then((res) => console.log(`mergeText3 :`, res));
