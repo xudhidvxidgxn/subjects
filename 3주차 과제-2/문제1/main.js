@@ -5,6 +5,11 @@ function print() {
                 console.log("Hello, World!");
             }, 1000),
         );
+        //reject();
     });
 }
-print().then();
+print()
+    .then()
+    .catch(() => {
+        console.log("실패");
+    });
