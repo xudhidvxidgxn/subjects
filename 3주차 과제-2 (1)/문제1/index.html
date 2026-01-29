@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3주차 과제-2 (1) 1</title>
+        <style>
+            #preview {
+                max-width: 400px;
+                max-height: 300px;
+                border: 2px dashed #ddd;
+                margin-top: 20px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="file" id="input" />
+        <img id="preview" alt="미리보기" />
+
+        <script>
+            const input = document.getElementById("input");
+            input.addEventListener("change", (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                const reader = new FileReader();
+                reader.addEventListener("load", (e) => {
+                    document.getElementById("preview").src = e.target.result;
+                    document.getElementById("preview").style.display = "block";
+                });
+                reader.readAsDataURL(file);
+            });
+        </script>
+    </body>
+</html>
